@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Lucas Vinicius</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/main.js" defer></script>
+</head>
+
+<body class="bg-darker font-sans relative">
+    <div class="bg-noise fixed inset-0 z-[1] pointer-events-none"></div>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+    <header class="fixed top-0 inset-x-0 z-50 glass-header">
+        <nav class="max-w-7xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-2 font-bold text-white shrink-0">
+                <span class="text-accent font-mono text-lg">&lt;</span>
+                <div class="relative flex items-center">
+                    <img id="profile-img" class="header-profile-img"
+                         src="public/images/profile.jpeg"
+                         alt="Foto de perfil de Lucas Vinicius"
+                         onerror="handleImageError()">
+                    <div id="profile-fallback" class="header-profile-fallback">LV</div>
+                </div>
+                <span class="font-display">Lucas Vinicius</span>
+            </a>
+
+            <ul class="hidden lg:flex items-center gap-8">
+                <li><a class="nav-link" href="#home">Início</a></li>
+                <li><a class="nav-link" href="#sobre">Sobre mim</a></li>
+                <li><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li><a class="nav-link" href="#contatos">Contatos</a></li>
+                <li>
+                    <a href="https://github.com/LucasVini-eng" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-white hover:border-accent hover:bg-accent/10 hover:text-accent transition-all">
+                        <i class="ph ph-github-logo text-base"></i> GitHub
+                    </a>
+                </li>
+            </ul>
+
+            <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"
+                    class="lg:hidden text-white p-2 -mr-2">
+                <i id="menu-icon-open" class="ph ph-list text-2xl"></i>
+                <i id="menu-icon-close" class="ph ph-x text-2xl hidden"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-darker/95 px-4 py-4">
+            <ul class="flex flex-col items-center gap-4 text-center">
+                <li><a class="nav-link" href="#home">Início</a></li>
+                <li><a class="nav-link" href="#sobre">Sobre mim</a></li>
+                <li><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li><a class="nav-link" href="#contatos">Contatos</a></li>
+                <li class="pt-2">
+                    <a href="https://github.com/LucasVini-eng" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-white hover:border-accent hover:text-accent transition-all">
+                        <i class="ph ph-github-logo text-base"></i> GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="relative min-h-screen flex items-center pt-32 pb-16 overflow-hidden">
+            <div class="bg-grid absolute inset-0 pointer-events-none"></div>
+            <div class="glow-node absolute -top-24 right-10 w-[420px] h-[420px] pointer-events-none"></div>
+            <div class="relative max-w-7xl mx-auto px-4 md:px-8 grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <p class="eyebrow font-mono uppercase tracking-widest text-accent text-sm font-semibold mb-4 min-h-[1.4em]">
+                        <span id="hero-typewriter"></span><span class="blink-cursor" aria-hidden="true"></span>
+                    </p>
+                    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] mb-6">
+                        Construindo software<br />
+                        <span class="text-accent">que gera valor</span>
+                    </h1>
+                    <p class="text-slate-300 text-lg mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                        Projeto e desenvolvo soluções de software que integram engenharia, dados e automação.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#projetos"
+                           class="inline-flex items-center justify-center gap-2 rounded-xl bg-accent hover:bg-accent-hover border border-accent hover:border-accent-hover text-white font-semibold px-6 py-3.5 transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(184,110,40,0.25)]">
+                            Ver Projetos <i class="ph ph-arrow-right text-lg"></i>
+                        </a>
+                        <a href="#contatos"
+                           class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 text-white font-semibold px-6 py-3.5 transition-all hover:border-accent hover:bg-accent/10 hover:text-accent hover:-translate-y-0.5">
+                            <i class="ph ph-paper-plane-tilt text-lg"></i> Falar Comigo
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 pt-6 mt-8 border-t border-white/10 justify-center lg:justify-start">
+                        <div class="flex items-center gap-3 border border-white/10 rounded-xl px-4 py-2.5">
+                            <span class="font-mono font-bold text-xl text-white" id="hero-completed-count">0</span>
+                            <span class="status-badge status-concluido"><span class="status-dot"></span> Concluídos</span>
+                        </div>
+                        <div class="flex items-center gap-3 border border-white/10 rounded-xl px-4 py-2.5">
+                            <span class="font-mono font-bold text-xl text-white" id="hero-active-count">0</span>
+                            <span class="status-badge status-desenvolvimento"><span class="status-dot"></span> Em Desenvolvimento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 hidden md:block">
+                    <div class="relative rounded-2xl border border-white/10 bg-card shadow-2xl overflow-hidden">
+                        <div class="flex items-center gap-2 px-5 py-3 border-b border-white/10">
+                            <span class="terminal-dot bg-red-500/70"></span>
+                            <span class="terminal-dot bg-yellow-500/70"></span>
+                            <span class="terminal-dot bg-green-500/70"></span>
+                            <span class="ml-2 text-xs text-slate-500 font-mono">engineer.config.ts</span>
+                        </div>
+                        <div class="p-5 font-mono text-sm leading-7 text-slate-300">
+                            <p><span class="text-accent">const</span> <span class="text-white">engineer</span> = {</p>
+                            <p class="ml-4">name: <span class="text-white">'Lucas Vinicius'</span>,</p>
+                            <p class="ml-4">role: <span class="text-white">'Software &amp; Data Engineer'</span>,</p>
+                            <p class="ml-4">focus: <span class="text-white">'Scalability &amp; Efficiency'</span>,</p>
+                            <p class="ml-4">buildSolutions: <span class="text-accent">function</span>() {</p>
+                            <p class="ml-8 text-slate-500">// Efficient processes and clean code</p>
+                            <p class="ml-8"><span class="text-white">return</span> <span class="text-accent font-bold">true</span>;</p>
+                            <p class="ml-4">}</p>
+                            <p>};</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="border-y border-white/10 bg-dark overflow-hidden">
+            <div class="ticker-track py-4">
+                <span class="ticker-item"><i class="ph ph-code text-accent"></i> Python</span>
+                <span class="ticker-item"><i class="ph ph-coffee text-accent"></i> Java</span>
+                <span class="ticker-item"><i class="ph ph-lightning text-accent"></i> FastAPI</span>
+                <span class="ticker-item"><i class="ph ph-leaf text-accent"></i> Spring Boot</span>
+                <span class="ticker-item"><i class="ph ph-database text-accent"></i> PostgreSQL</span>
+                <span class="ticker-item"><i class="ph ph-docker-logo text-accent"></i> Docker</span>
+                <span class="ticker-item"><i class="ph ph-cloud text-accent"></i> GCP / AWS</span>
+                <span class="ticker-item"><i class="ph ph-arrows-clockwise text-accent"></i> CI/CD</span>
+                <span class="ticker-item"><i class="ph ph-gear text-accent"></i> N8N &amp; RPA</span>
+                <span class="ticker-item"><i class="ph ph-chart-pie-slice text-accent"></i> Power BI</span>
+                <span class="ticker-item"><i class="ph ph-code text-accent"></i> JavaScript</span>
+                <!-- duplicated for a seamless loop -->
+                <span class="ticker-item"><i class="ph ph-code text-accent"></i> Python</span>
+                <span class="ticker-item"><i class="ph ph-coffee text-accent"></i> Java</span>
+                <span class="ticker-item"><i class="ph ph-lightning text-accent"></i> FastAPI</span>
+                <span class="ticker-item"><i class="ph ph-leaf text-accent"></i> Spring Boot</span>
+                <span class="ticker-item"><i class="ph ph-database text-accent"></i> PostgreSQL</span>
+                <span class="ticker-item"><i class="ph ph-docker-logo text-accent"></i> Docker</span>
+                <span class="ticker-item"><i class="ph ph-cloud text-accent"></i> GCP / AWS</span>
+                <span class="ticker-item"><i class="ph ph-arrows-clockwise text-accent"></i> CI/CD</span>
+                <span class="ticker-item"><i class="ph ph-gear text-accent"></i> N8N &amp; RPA</span>
+                <span class="ticker-item"><i class="ph ph-chart-pie-slice text-accent"></i> Power BI</span>
+                <span class="ticker-item"><i class="ph ph-code text-accent"></i> JavaScript</span>
+            </div>
+        </div>
+        <section id="sobre" class="py-24 border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-14 items-start">
+                <div class="reveal">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Sobre <span class="text-accent">mim</span></h2>
+                    <div class="w-14 h-1 bg-accent rounded mb-6"></div>
+                    <p class="text-slate-300 leading-relaxed mb-8">
+                        Engenheiro de Software e formando em Bacharelado em Sistemas de Informação, com experiência no desenvolvimento e integração de sistemas, construção de APIs, automação de processos e engenharia de dados.
+                        Atuação em levantamento de necessidades de negócio, implementação de soluções escaláveis e suporte à tomada de decisão por meio de tecnologias em nuvem e arquitetura de software.
+                    </p>
+                    <div class="flex flex-col gap-4 text-slate-300">
+                        <div class="flex items-start gap-3">
+                            <i class="ph ph-globe-hemisphere-west text-accent text-2xl mt-0.5"></i>
+                            <span><strong class="text-white">Aplicações Web &amp; Mobile Android:</strong> Interfaces funcionais com alta performance, focadas na melhor experiência do usuário.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ph ph-cpu text-accent text-2xl mt-0.5"></i>
+                            <span><strong class="text-white">Sistemas &amp; Backend Robustos:</strong> Arquiteturas sustentáveis com Java, Python, REST APIs e microsserviços.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ph ph-robot text-accent text-2xl mt-0.5"></i>
+                            <span><strong class="text-white">Automação de Processos (RPA):</strong> Extração automatizada de dados, pipelines de ETL/ELT e bots de automação comercial e fiscal.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="ph ph-chart-line-up text-accent text-2xl mt-0.5"></i>
+                            <span><strong class="text-white">Dashboards &amp; Analytics:</strong> Visualização de dados analíticos com Power BI e Streamlit para direcionamento estratégico.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal" style="transition-delay:0.12s">
+                    <h3 class="font-display text-xl font-semibold text-white mb-6">Stack &amp; Tecnologias</h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <p class="skill-group-title mb-3">Linguagens</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-code"></i> Python</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-coffee"></i> Java</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-device-mobile"></i> Kotlin</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-code"></i> JavaScript</span>
+                            </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <p class="skill-group-title mb-3">Mobile &amp; Web | Backend</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-device-mobile"></i> Android Studio</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-leaf"></i> Spring Boot</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"> Django</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-lightning"></i> FastAPI</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-layout"></i> Tailwind CSS | Bootstrap</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-chart-bar"></i> Streamlit</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <p class="skill-group-title mb-3">Engenharia de Dados | Automação</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-database"></i> PostgreSQL </span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-hard-drive"></i> SQL &amp; NoSQL</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-arrows-clockwise"></i> CI/CD Pipelines</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-chart-pie-slice"></i>Microsoft Power BI</span>
+                                 <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-gear"></i> N8N &amp; RPA</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-spider"></i> Web Scraping / Selenium</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <p class="skill-group-title mb-3">Cloud</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-docker-logo"></i> Docker / Kubernetes</span>
+                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-cloud"></i> GCP / AWS</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos" class="py-24 bg-dark border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Projetos em <span class="text-accent">destaque</span></h2>
+                    <div class="w-14 h-1 bg-accent rounded mx-auto mb-5"></div>
+                    <p class="text-slate-300 max-w-xl mx-auto">
+                        Explore soluções desenvolvidas em produção, projetos de automação e engenharia analítica.
+                    </p>
+                </div>
+
+                <div class="flex justify-center mb-6 reveal">
+                    <div class="relative w-full md:w-2/3 lg:w-1/2">
+                        <i class="ph ph-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-lg"></i>
+                        <input type="text" id="project-search"
+                               class="form-input w-full rounded-xl pl-11 pr-4 py-3"
+                               placeholder="Buscar por tecnologia ou nome do projeto...">
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-2 mb-10 reveal" id="filter-container">
+                    <button class="filter-btn active rounded-full px-5 py-2 text-sm font-medium" data-filter="all">Todos</button>
+                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium" data-filter="software">Engenharia de Software</button>
+                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium" data-filter="dados">Dados &amp; Analytics</button>
+                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium" data-filter="automacao">Automação &amp; RPA</button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid"></div>
+            </div>
+        </section>
+
+        <section id="contatos" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-14">
+                <div class="reveal">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Vamos <span class="text-accent">Conversar?</span></h2>
+                    <div class="w-14 h-1 bg-accent rounded mb-6"></div>
+                    <p class="text-slate-300 mb-10 leading-relaxed">
+                        Aberto a novas oportunidades de projetos, consultoria técnica de automação, arquitetura de sistemas e pipelines de dados.
+                    </p>
+
+                    <div class="flex flex-col gap-5">
+                        <a href="mailto:vinidev.eng@gmail.com" class="flex items-center gap-4 text-slate-300 no-underline group">
+                            <div class="bg-card border border-white/10 rounded-full w-12 h-12 flex items-center justify-center group-hover:border-accent transition-colors">
+                                <i class="ph ph-envelope-simple text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-accent mb-0.5">E-mail de Contato</p>
+                                <p class="font-medium text-white mb-0">vinidev.eng@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/lucasvinicius" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 text-slate-300 no-underline group">
+                            <div class="bg-card border border-white/10 rounded-full w-12 h-12 flex items-center justify-center group-hover:border-accent transition-colors">
+                                <i class="ph ph-linkedin-logo text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-accent mb-0.5">LinkedIn</p>
+                                <p class="font-medium text-white mb-0">linkedin.com/in/lucas-vinicius-ds</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reveal" style="transition-delay:0.12s">
+                    <div class="bg-card border border-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
+                        <form id="contact-form" novalidate>
+                            <div class="mb-5">
+                                <label for="name" class="block text-sm text-slate-300 mb-2">Seu Nome / Empresa</label>
+                                <input type="text" id="name" required class="form-input w-full rounded-lg px-4 py-3" placeholder="Ex: Maria Silva">
+                            </div>
+                            <div class="mb-5">
+                                <label for="email" class="block text-sm text-slate-300 mb-2">E-mail de Contato</label>
+                                <input type="email" id="email" required class="form-input w-full rounded-lg px-4 py-3" placeholder="seu.email@empresa.com">
+                            </div>
+                            <div class="mb-5">
+                                <label for="message" class="block text-sm text-slate-300 mb-2">Sua Mensagem</label>
+                                <textarea id="message" rows="4" required class="form-input w-full rounded-lg px-4 py-3" placeholder="Conte brevemente sobre o projeto ou necessidade..."></textarea>
+                            </div>
+                            <button type="submit"
+                                    class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-accent hover:bg-accent-hover border border-accent hover:border-accent-hover text-white font-semibold py-3.5 transition-all">
+                                Enviar Mensagem <i class="ph ph-paper-plane-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="toast" class="custom-toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <i class="ph ph-check-circle toast-icon"></i>
+                    <span id="toast-message">Mensagem enviada com sucesso!</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-darker border-t border-white/10 py-10">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <p class="font-display text-lg font-bold text-white mb-1">
+                    Lucas Vinicius<span class="text-accent font-mono">/&gt;</span>
+                </p>
+                <p class="text-sm text-slate-400 mb-0">© 2026 Lucas Vinicius. Todos os direitos reservados.</p>
+            </div>
+
+            <div class="flex justify-center gap-3">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vinidev.eng@gmail.com&su=Olá,+vamos+fechar+um+projeto..." target="_blank"
+                   class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all" aria-label="E-mail">
+                    <i class="ph ph-envelope-simple text-lg"></i>
+                </a>
+                <a href="https://linkedin.com/in/lucas-vinicius-ds" target="_blank" rel="noopener noreferrer"
+                   class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all" aria-label="LinkedIn">
+                    <i class="ph ph-linkedin-logo text-lg"></i>
+                </a>
+                <a href="https://github.com/lucasvinicius" target="_blank" rel="noopener noreferrer"
+                   class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all" aria-label="GitHub">
+                    <i class="ph ph-github-logo text-lg"></i>
+                </a>
+                <a href="https://wa.me/558296402650" target="_blank" rel="noopener noreferrer"
+                   class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all" aria-label="WhatsApp">
+                    <i class="ph ph-whatsapp-logo text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="status-bar" role="status" aria-label="Barra de status">
+        <div class="status-bar-progress" id="status-bar-progress"></div>
+        <div class="status-bar-left">
+            <span class="status-bar-segment"><i class="ph ph-git-branch"></i> main</span>
+            <span class="status-bar-segment"><i class="ph ph-check-circle"></i> build ok</span>
+            <span class="status-bar-segment" id="status-bar-path">~/portfolio</span>
+        </div>
+        <div class="status-bar-right">
+            <span class="status-bar-segment hidden sm:flex">UTF-8</span>
+            <span class="status-bar-segment hidden sm:flex">Pt-BR</span>
+            <button type="button" id="status-back-to-top" class="status-bar-segment clickable" aria-label="Voltar ao topo">
+                <i class="ph ph-arrow-up"></i> subir
+            </button>
+        </div>
+    </div>
+</body>
+</html>
