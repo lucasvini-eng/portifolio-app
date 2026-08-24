@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status: "desenvolvimento",
             statusText: "Em Desenvolvimento",
             desc: "Plataforma interna para automatizar solicitações, aprovações e controle de férias e afastamentos, com calendário, notificações e dashboards para o RH",
-            tech: ["Em definição"],
+            tech: ["Python", "Django", "AWS RSD", "PostgreSQL", "React"],
             codeUrl: "https://lucasvini-eng.github.io/project-announcement-2/",
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-2/"
         },
