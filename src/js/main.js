@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "software",
             status: "desenvolvimento",
             statusText: "Em desenvolvimento",
-            desc: "Em definição",
-            tech: ["Em definição"],
+            desc: "Landing page responsiva para divulgação de produtos do Mercado Livre como afiliado, com foco em organização, praticidade e conversão.",
+            tech: ["Tailwind CSS", "JavaScript", "Git", "GitHub Pages", "Landing Page"],
             codeUrl: "https://github.com/LucasVini-eng/",
             demoUrl: "https://github.com/LucasVini-eng/"
         },
