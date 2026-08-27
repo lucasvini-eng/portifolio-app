@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 2,
             title: "Quote Monitor ($)",
             category: "automacao",
-            status: "projeto",
+            status: "producao",
             statusText: "Em Manuteção",
             desc: "Robô de automação (RPA) para monitoramento contínuo de cotações, automatizando a coleta, processamento e disponibilização de informações estratégicas",
             tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Streamlit Community Cloud"],
