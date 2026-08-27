@@ -13,6 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             id: 1,
+            title: "Dashboard Management (Power BI)",
+            category: "dados",
+            status: "concluido",
+            statusText: "Concluído",
+            desc: "Orquestração de visões analíticas interativas integradas a uma interface web personalizada, acelerando decisões baseadas em indicadores operacionais.",
+            tech: ["Tailwind CSS", "JavaScript", "Power BI Embedded", "ETL", "Power Query"],
+            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
+            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
+        },
+        {
+            id: 2,
             title: "Fluxo de Ausências (RH)",
             category: "software",
             status: "desenvolvimento",
@@ -23,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-2/"
         },
         {
-            id: 2,
+            id: 3,
             title: "Financial Control ($)",
             category: "software",
             status: "desenvolvimento",
@@ -34,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-1/"
         },
         {
-            id: 3,
+            id: 4,
             title: "Quote Monitor ($)",
             category: "automacao",
             status: "concluido",
@@ -43,17 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Streamlit Community Cloud"],
             codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
             demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
-        },
-        {
-            id: 4,
-            title: "SelectTech LVS - LP",
-            category: "software",
-            status: "desenvolvimento",
-            statusText: "Em desenvolvimento",
-            desc: "Landing page responsiva para divulgação de produtos do Mercado Livre como afiliado, com foco em organização, praticidade e conversão.",
-            tech: ["Tailwind CSS", "JavaScript", "Git", "GitHub Pages", "Landing Page"],
-            codeUrl: "https://github.com/LucasVini-eng/",
-            demoUrl: "https://github.com/LucasVini-eng/"
         },
 
         {
@@ -69,17 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 6,
-            title: "Dashboard Management (Power BI)",
-            category: "dados",
-            status: "producao",
-            statusText: "Manutenção",
-            desc: "Orquestração de visões analíticas interativas integradas a uma interface web personalizada, acelerando decisões baseadas em indicadores operacionais.",
-            tech: ["Tailwind CSS", "JavaScript", "Power BI Embedded", "ETL"],
-            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
-            demoUrl: "https://lucasvini-eng.github.io/lveProject-001-DashboardManager-PowerBI/"
-        },
-        {
-            id: 7,
             title: "Task Management API",
             category: "software",
             status: "concluido",
