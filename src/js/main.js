@@ -22,6 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
             codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
             demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
         },
+        
+        {
+            id: 2,
+            title: "Quote Monitor ($)",
+            category: "automacao",
+            status: "projeto",
+            statusText: "Em Manuteção",
+            desc: "Robô de automação (RPA) para monitoramento contínuo de cotações, automatizando a coleta, processamento e disponibilização de informações estratégicas",
+            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Streamlit Community Cloud"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
+            demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
+        },
         {
             id: 2,
             title: "Fluxo de Ausências (RH)",
@@ -43,17 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ["Java", "PostgreSQL"],
             codeUrl: "https://lucasvini-eng.github.io/project-announcement-1/",
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-1/"
-        },
-        {
-            id: 4,
-            title: "Quote Monitor ($)",
-            category: "automacao",
-            status: "concluido",
-            statusText: "Concluído",
-            desc: "Robô de automação (RPA) para monitoramento contínuo de cotações, automatizando a coleta, processamento e disponibilização de informações estratégicas",
-            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Streamlit Community Cloud"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
-            demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
         },
 
         {
