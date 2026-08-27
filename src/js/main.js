@@ -22,9 +22,21 @@ document.addEventListener('DOMContentLoaded', () => {
             codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
             demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
         },
-        
+
         {
             id: 2,
+            title: "Link Shortening System (LSS)",
+            category: "software",
+            status: "concluido",
+            statusText: "Concluído",
+            desc: "Sistema web de encurtamento de URLs gerando links curtos e seguros, com foco em simplicidade, segurança e rastreabilidade.",
+            tech: ["Python", "Streamlit", "Validators", "Pyshorteners", "Streamlit Community Cloud"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
+            demoUrl: "https://project-002-linkshorteningsystem-lss.streamlit.app/"
+        },
+        
+        {
+            id: 3,
             title: "Quote Monitor ($)",
             category: "automacao",
             status: "producao",
@@ -35,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
         },
         {
-            id: 2,
+            id: 4,
             title: "Fluxo de Ausências (RH)",
             category: "software",
             status: "desenvolvimento",
@@ -46,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-2/"
         },
         {
-            id: 3,
+            id: 5,
             title: "Financial Control ($)",
             category: "software",
             status: "desenvolvimento",
@@ -55,18 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ["Java", "PostgreSQL"],
             codeUrl: "https://lucasvini-eng.github.io/project-announcement-1/",
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-1/"
-        },
-
-        {
-            id: 5,
-            title: "Link Shortening System (LSS)",
-            category: "software",
-            status: "concluido",
-            statusText: "Concluído",
-            desc: "Sistema web de encurtamento de URLs gerando links curtos e seguros, com foco em simplicidade, segurança e rastreabilidade.",
-            tech: ["Python", "Streamlit", "Validators", "Pyshorteners", "Streamlit Community Cloud"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
-            demoUrl: "https://project-002-linkshorteningsystem-lss.streamlit.app/"
         },
         {
             id: 6,
