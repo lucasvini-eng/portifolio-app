@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
             codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
             demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
         },
-
         {
             id: 2,
             title: "Link Shortening System (LSS)",
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
             codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
             demoUrl: "https://project-002-linkshorteningsystem-lss.streamlit.app/"
         },
-        
         {
             id: 3,
             title: "Quote Monitor ($)",
