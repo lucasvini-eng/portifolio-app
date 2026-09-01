@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "software",
             status: "concluido",
             statusText: "Concluído",
-            desc: "Sistema web de encurtamento de URLs gerando links curtos e seguros, com foco em simplicidade, segurança e rastreabilidade.",
+            desc: "A web-based URL shortening system that generates short, secure links, with a focus on simplicity, security, and traceability.",
             tech: ["Python", "Streamlit", "Validators", "Pyshorteners", "Streamlit Community Cloud"],
             codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
             demoUrl: "https://project-002-linkshorteningsystem-lss.streamlit.app/"
@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 4,
-            title: "Fluxo de Ausências (RH)",
+            title: "Absence Tracking (HR)",
             category: "software",
             status: "desenvolvimento",
             statusText: "Em Desenvolvimento",
-            desc: "Plataforma interna para automatizar solicitações, aprovações e controle de férias e afastamentos, com calendário, notificações e dashboards para o RH",
+            desc: "An internal platform for automating requests, approvals, and tracking of vacation and leave, featuring a calendar, notifications, and dashboards for HR.",
             tech: ["Python", "Django", "AWS RSD", "PostgreSQL", "React.js"],
             codeUrl: "https://lucasvini-eng.github.io/project-announcement-2/",
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-2/"
