@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "automacao",
             status: "producao",
             statusText: "Em Manuteção",
-            desc: "Robô de automação (RPA) para monitoramento contínuo de cotações, automatizando a coleta, processamento e disponibilização de informações estratégicas",
+            desc: "Robotic Process Automation (RPA) for continuous monitoring of market quotes, automating the collection, processing, and dissemination of strategic information",
             tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Streamlit Community Cloud"],
             codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
             demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "software",
             status: "desenvolvimento",
             statusText: "Em desenvolvimento",
-            desc: "Aplicação desktop desenvolvida em Java para gerenciamento de finanças, permitindo cadastrar e acompanhar receitas, despesas e categorias, além de consultar o saldo financeiro.",
+            desc: "Robotic Process Automation (RPA) for continuous monitoring of market quotes, automating the collection, processing, and dissemination of strategic information.",
             tech: ["Java", "PostgreSQL"],
             codeUrl: "https://lucasvini-eng.github.io/project-announcement-1/",
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-1/"
