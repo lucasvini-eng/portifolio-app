@@ -9,7 +9,6 @@ function handleImageError() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
     const projects = [
         {
             id: 1,
@@ -145,7 +144,6 @@ const searchInput = document.getElementById('project-search');
     }
 
     renderProjects('all');
-
     const projectCounts = {
         concluido: projects.filter(p => p.status === 'concluido').length,
         desenvolvimento: projects.filter(p => p.status === 'desenvolvimento').length,
@@ -241,9 +239,9 @@ const searchInput = document.getElementById('project-search');
 
     const sectionLabels = {
         home: '~/portfolio/home.js',
-        sobre: '~/portfolio/sobre.js',
-        projetos: '~/portfolio/projetos.js',
-        contatos: '~/portfolio/contatos.js',
+        sobre: '~/portfolio/about-me.js',
+        projetos: '~/portfolio/projects.js',
+        contatos: '~/portfolio/contacts.js',
     };
 
     function onScroll() {
@@ -286,7 +284,6 @@ const searchInput = document.getElementById('project-search');
         });
     }
 
-    // Mobile menu (no Bootstrap dependency)
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIconOpen = document.getElementById('menu-icon-open');
@@ -316,7 +313,6 @@ const searchInput = document.getElementById('project-search');
         });
     }
 
-    // Scroll reveal for sections
     const revealEls = document.querySelectorAll('.reveal');
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
         revealEls.forEach(el => el.classList.add('is-visible'));
@@ -332,7 +328,6 @@ const searchInput = document.getElementById('project-search');
         revealEls.forEach(el => revealObserver.observe(el));
     }
 
-    // Count-up hero stats when they enter view
     const statEls = document.querySelectorAll('[data-count-target]');
     function animateCount(el) {
         const target = parseInt(el.getAttribute('data-count-target'), 10) || 0;
@@ -368,13 +363,12 @@ const searchInput = document.getElementById('project-search');
         document.querySelectorAll('[data-count-target]').forEach(animateCount);
     }
 
-    // Hero typewriter — cycles real skill taglines, respects reduced motion
     const typeTarget = document.getElementById('hero-typewriter');
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
-            'ENGENHEIRO DE SOFTWARE',
-            'ENGENHARIA DE DADOS',
-            'ANÁLISE DE SISTEMAS'
+            'SOFTWARE ENGINEER',
+            'DATA ENGINEERING',
+            'SYSTEMS ANALYSIS'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
