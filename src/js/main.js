@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "dados",
             status: "concluido",
             statusText: "Concluído",
-            desc: "Orquestração de visões analíticas interativas integradas a uma interface web personalizada, acelerando decisões baseadas em indicadores operacionais.",
+            desc: "Orchestration of interactive analytical views integrated into a customized web interface, accelerating decisions based on operational metrics..",
             tech: ["Tailwind CSS", "JavaScript", "Power BI Embedded", "ETL", "Power Query"],
             codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
             demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
