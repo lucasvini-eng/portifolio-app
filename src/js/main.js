@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status: "desenvolvimento",
             statusText: "Em Desenvolvimento",
             desc: "An internal platform for automating requests, approvals, and tracking of vacation and leave, featuring a calendar, notifications, and dashboards for HR.",
-            tech: ["Python", "Django", "AWS RSD", "PostgreSQL", "React.js"],
+            tech: ["Python", "Django", "AWS RSD", "PostgreSQL", "Streamlit"],
             codeUrl: "https://lucasvini-eng.github.io/project-announcement-2/",
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-2/"
         },
