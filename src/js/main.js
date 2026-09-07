@@ -367,8 +367,7 @@ const searchInput = document.getElementById('project-search');
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
             'SOFTWARE ENGINEER',
-            'DATA ENGINEERING',
-            'SYSTEMS ANALYSIS'
+            'DATA ENGINEERING'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
