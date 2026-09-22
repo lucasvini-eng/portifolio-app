@@ -145,8 +145,8 @@ const searchInput = document.getElementById('project-search');
 
     renderProjects('all');
     const projectCounts = {
-        concluido: projects.filter(p => p.status === 'concluido').length,
-        desenvolvimento: projects.filter(p => p.status === 'desenvolvimento').length,
+        completed: projects.filter(p => p.status === 'completed').length,
+        dev: projects.filter(p => p.status === 'dev').length,
     };
 
     filterBtns.forEach(btn => {
@@ -201,15 +201,15 @@ const searchInput = document.getElementById('project-search');
                         name: nameInput.value,
                         email: emailInput.value,
                         message: messageInput.value,
-                        _subject: `Novo contato de ${nameInput.value}`
+                        _subject: `New contact from ${nameInput.value}`
                     })
                 });
 
-                if (!response.ok) throw new Error('Falha no envio');
+                if (!response.ok) throw new Error('Shipping error');
 
                 toast.classList.remove('error');
                 if (toastIcon) toastIcon.className = 'ph ph-check-circle toast-icon';
-                toastMessage.textContent = 'Mensagem enviada com sucesso!';
+                toastMessage.textContent = 'Message sent successfully!';
                 toast.classList.add('show');
 
                 form.reset();
@@ -398,6 +398,6 @@ const searchInput = document.getElementById('project-search');
         }
         tick();
     } else if (typeTarget) {
-        typeTarget.textContent = 'ENGENHEIRO DE SOFTWARE';
+        typeTarget.textContent = 'SOFTWARE ENGINEER';
     }
 });
