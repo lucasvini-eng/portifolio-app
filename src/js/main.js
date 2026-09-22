@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 3,
             title: "Quote Monitor ($)",
             category: "automacao",
-            status: "producao",
-            statusText: "Em Manuteção",
+            status: "completed",
+            statusText: "completed",
             desc: "Robotic Process Automation (RPA) for continuous monitoring of market quotes, automating the collection, processing, and dissemination of strategic information",
-            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Streamlit Community Cloud"],
+            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "ETL"],
             codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
             demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
         },
