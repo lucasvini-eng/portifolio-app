@@ -335,8 +335,8 @@ const searchInput = document.getElementById('project-search');
     }
     const completedEl = document.getElementById('hero-completed-count');
     const activeEl = document.getElementById('hero-active-count');
-    if (completedEl) completedEl.setAttribute('data-count-target', projectCounts.concluido);
-    if (activeEl) activeEl.setAttribute('data-count-target', projectCounts.desenvolvimento);
+    if (completedEl) completedEl.setAttribute('data-count-target', projectCounts.completed);
+    if (activeEl) activeEl.setAttribute('data-count-target', projectCounts.dev);
 
     if ('IntersectionObserver' in window) {
         const statObserver = new IntersectionObserver((entries) => {
