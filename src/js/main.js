@@ -98,7 +98,7 @@ const searchInput = document.getElementById('project-search');
 
             let statusClass = 'status-concluido';
             if (p.status === 'producao') statusClass = 'status-producao';
-            if (p.status === 'desenvolvimento') statusClass = 'status-desenvolvimento';
+            if (p.status === 'dev') statusClass = 'status-dev';
 
             const techSpans = p.tech.map(t =>
                 `<span class="font-mono text-xs bg-white/5 text-slate-300 px-2 py-1 rounded-md">${t}</span>`
