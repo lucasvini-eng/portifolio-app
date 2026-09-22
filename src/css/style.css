@@ -226,10 +226,10 @@ body {
 .status-badge .status-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
 
 .status-completed { background-color: var(--color-status-completed-bg); border: 1px solid var(--color-status-concluido-border); color: var(--color-status-concluido-text); }
-.status-concluido .status-dot { background-color: #22c55e; animation: pulseDot 1.8s infinite; }
+.status-completed .status-dot { background-color: #22c55e; animation: pulseDot 1.8s infinite; }
 
-.status-desenvolvimento { background-color: var(--color-status-dev-bg); border: 1px solid var(--color-status-dev-border); color: var(--color-status-dev-text); }
-.status-desenvolvimento .status-dot { background-color: #eab308; animation: pulseDot 1.8s infinite; }
+.status-dev{ background-color: var(--color-status-dev-bg); border: 1px solid var(--color-status-dev-border); color: var(--color-status-dev-text); }
+.status-dev .status-dot { background-color: #eab308; animation: pulseDot 1.8s infinite; }
 
 .status-producao { background-color: var(--color-status-manutencao-bg); border: 1px solid var(--color-status-manutencao-border); color: var(--color-status-manutencao-text); }
 .status-producao .status-dot { background-color: #38bdf8; animation: pulseDot 1.8s infinite; }
