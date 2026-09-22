@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Quote Monitor ($)",
             category: "automacao",
             status: "completed",
-            statusText: "completed",
+            statusText: "Completed",
             desc: "Robotic Process Automation (RPA) for continuous monitoring of market quotes, automating the collection, processing, and dissemination of strategic information",
             tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "ETL"],
             codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
@@ -55,17 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
             demoUrl: "https://lucasvini-eng.github.io/project-announcement-2/"
         },
         {
-            id: 5,
-            title: "Financial Control ($)",
-            category: "software",
-            status: "desenvolvimento",
-            statusText: "Em desenvolvimento",
-            desc: "Robotic Process Automation (RPA) for continuous monitoring of market quotes, automating the collection, processing, and dissemination of strategic information.",
-            tech: ["Java", "PostgreSQL"],
-            codeUrl: "https://lucasvini-eng.github.io/project-announcement-1/",
-            demoUrl: "https://lucasvini-eng.github.io/project-announcement-1/"
-        },
-        {
             id: 6,
             title: "Task Management API",
             category: "software",
@@ -75,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ["Java", "Spring Boot", "API REST"],
             codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
             demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
-        },
+        }
     ];
 
 const grid = document.getElementById('projects-grid');
