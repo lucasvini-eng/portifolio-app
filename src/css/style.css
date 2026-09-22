@@ -9,9 +9,9 @@
     --color-card-hover: #1a1d26;
     --color-border: rgba(255, 255, 255, 0.08);
     --color-text-muted: #f3f4f5;
-    --color-status-concluido-bg: #22c55e1f;
-    --color-status-concluido-border: #22c55e59;
-    --color-status-concluido-text: #4ade80;
+    --color-status-completed-bg: #22c55e1f;
+    --color-status-completed-border: #22c55e59;
+    --color-status-completed-text: #4ade80;
     --color-status-dev-bg: rgba(234, 179, 8, 0.12);
     --color-status-dev-border: rgba(234, 179, 8, 0.35);
     --color-status-dev-text: #fde047;
@@ -225,7 +225,7 @@ body {
 }
 .status-badge .status-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
 
-.status-concluido { background-color: var(--color-status-concluido-bg); border: 1px solid var(--color-status-concluido-border); color: var(--color-status-concluido-text); }
+.status-completed { background-color: var(--color-status-completed-bg); border: 1px solid var(--color-status-concluido-border); color: var(--color-status-concluido-text); }
 .status-concluido .status-dot { background-color: #22c55e; animation: pulseDot 1.8s infinite; }
 
 .status-desenvolvimento { background-color: var(--color-status-dev-bg); border: 1px solid var(--color-status-dev-border); color: var(--color-status-dev-text); }
