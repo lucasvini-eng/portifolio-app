@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             title: "Dashboard Management (Power BI)",
             category: "dados",
-            status: "concluido",
-            statusText: "Concluído",
+            status: "completed",
+            statusText: "Completed ✅",
             desc: "Orchestration of interactive analytical views integrated into a customized web interface, accelerating decisions based on operational metrics..",
             tech: ["Tailwind CSS", "JavaScript", "Power BI Embedded", "ETL", "Power Query"],
             codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 2,
             title: "Link Shortening System (LSS)",
             category: "software",
-            status: "concluido",
-            statusText: "Concluído",
+            status: "Completed ✅",
+            statusText: "Completed",
             desc: "A web-based URL shortening system that generates short, secure links, with a focus on simplicity, security, and traceability.",
             tech: ["Python", "Streamlit", "Validators", "Pyshorteners", "Streamlit Community Cloud"],
             codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Quote Monitor ($)",
             category: "automacao",
             status: "completed",
-            statusText: "Completed",
+            statusText: "Completed ✅",
             desc: "Robotic Process Automation (RPA) for continuous monitoring of market quotes, automating the collection, processing, and dissemination of strategic information",
             tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "ETL"],
             codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 4,
             title: "Absence Tracking (HR)",
             category: "software",
-            status: "desenvolvimento",
-            statusText: "Em Desenvolvimento",
+            status: "dev",
+            statusText: "In Development ⛏️",
             desc: "An internal platform for automating requests, approvals, and tracking of vacation and leave, featuring a calendar, notifications, and dashboards for HR.",
             tech: ["Python", "Django", "AWS RSD", "PostgreSQL", "Streamlit"],
             codeUrl: "https://lucasvini-eng.github.io/project-announcement-2/",
@@ -355,8 +355,9 @@ const searchInput = document.getElementById('project-search');
     const typeTarget = document.getElementById('hero-typewriter');
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
-            'SOFTWARE ENGINEER',
-            'DATA ENGINEERING'
+            'SOFTWARE & DATA ENGINEER',
+            'Hi👋🏾Welcome,my name is Lucas Vinicius!',
+            'Scalability, Efficiency & Security'            
         ];
         let phraseIndex = 0;
         let charIndex = 0;
