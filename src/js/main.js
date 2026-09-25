@@ -85,7 +85,7 @@ const searchInput = document.getElementById('project-search');
         if (filtered.length === 0) {
             grid.innerHTML = `
                 <div class="col-span-full text-center py-16">
-                    <p class="text-slate-400 text-lg mb-0">Nenhum projeto encontrado com os termos pesquisados.</p>
+                    <p class="text-slate-400 text-lg mb-0">No projects were found matching the search terms.</p>
                 </div>
             `;
             return;
@@ -96,7 +96,7 @@ const searchInput = document.getElementById('project-search');
             col.className = 'animate-slide-up';
             col.style.animationDelay = `${index * 0.08}s`;
 
-            let statusClass = 'status-concluido';
+            let statusClass = 'status-completed';
             if (p.status === 'producao') statusClass = 'status-producao';
             if (p.status === 'dev') statusClass = 'status-dev';
 
