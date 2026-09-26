@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "software",
             status: "completed",
             statusText: "Completed ✅",
-            desc: "O projeto que foi desenvolvido é uma API para gerenciar tarefas, utilizando Java e o framework Spring Boot. Primeiro, realiza-se o cadastro e a validação dos usuários e criptografia de senha no banco de dados H2. Depois, as tarefas são criadas e associadas aos seus respectivos usuários, podendo ser atualizadas e organizadas em listas.",
+            desc: "The project that was developed is an API for managing tasks, using Java and the Spring Boot framework. First, users are registered and validated, and their passwords are encrypted in the H2 database. Then, tasks are created and assigned to their respective users; they can be updated and organized into lists.",
             tech: ["Java", "Spring Boot", "API REST"],
             codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
             demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
