@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👋🏾Welcome my to projects!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
@@ -22,10 +25,8 @@
             <a href="#home" class="flex items-center gap-2 font-bold text-white shrink-0">
                 <span class="text-accent font-mono text-lg">&lt;</span>
                 <div class="relative flex items-center">
-                    <img id="profile-img" class="header-profile-img"
-                         src="public/images/profile.jpeg"
-                         alt="Foto de perfil de Lucas Vinicius"
-                         onerror="handleImageError()">
+                    <img id="profile-img" class="header-profile-img" src="public/images/profile.jpeg"
+                        alt="Foto de perfil de Lucas Vinicius" onerror="handleImageError()">
                     <div id="profile-fallback" class="header-profile-fallback">LV</div>
                 </div>
                 <span class="font-display">Lucas Vinicius</span>
@@ -38,14 +39,14 @@
                 <li><a class="nav-link" href="#contatos">Contacts</a></li>
                 <li>
                     <a href="https://github.com/LucasVini-eng" target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-white hover:border-accent hover:bg-accent/10 hover:text-accent transition-all">
+                        class="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-white hover:border-accent hover:bg-accent/10 hover:text-accent transition-all">
                         <i class="ph ph-github-logo text-base"></i> GitHub
                     </a>
                 </li>
             </ul>
 
-            <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"
-                    class="lg:hidden text-white p-2 -mr-2">
+            <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+                aria-label="Abrir menu" class="lg:hidden text-white p-2 -mr-2">
                 <i id="menu-icon-open" class="ph ph-list text-2xl"></i>
                 <i id="menu-icon-close" class="ph ph-x text-2xl hidden"></i>
             </button>
@@ -59,7 +60,7 @@
                 <li><a class="nav-link" href="#contatos">Contacts</a></li>
                 <li class="pt-2">
                     <a href="https://github.com/LucasVini-eng" target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-white hover:border-accent hover:text-accent transition-all">
+                        class="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-white hover:border-accent hover:text-accent transition-all">
                         <i class="ph ph-github-logo text-base"></i> GitHub
                     </a>
                 </li>
@@ -68,42 +69,44 @@
     </header>
 
     <main id="main-content">
-        <section id="home" class="relative min-h-screen flex items-center pt-32 pb-16 overflow-hidden">
+        <section id="home" class="relative min-h-screen flex items-center justify-center pt-32 pb-16 overflow-hidden">
             <div class="bg-grid absolute inset-0 pointer-events-none"></div>
-            <div class="glow-node absolute -top-24 right-10 w-[420px] h-[420px] pointer-events-none"></div>
-            <div class="relative max-w-7xl mx-auto px-4 md:px-8 grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 text-center lg:text-left">
-                    <p class="eyebrow font-mono uppercase tracking-widest text-accent text-sm font-semibold mb-4 min-h-[1.4em]">
-                        <span id="hero-typewriter"></span><span class="blink-cursor" aria-hidden="true"></span>
-                    </p>
-                    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] mb-6">
-                        Building Software<br />
-                        <span class="text-accent">that creates value</span>
-                    </h1>
-                    <p class="text-slate-300 text-lg mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                        I design and develop software solutions that integrate engineering, data, and automation.
-                    </p>
+            <div
+                class="glow-node absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] pointer-events-none">
+            </div>
+            <div class="relative max-w-4xl mx-auto px-4 md:px-8 text-center flex flex-col items-center">
+                <p
+                    class="eyebrow font-mono uppercase tracking-widest text-accent text-sm font-semibold mb-4 min-h-[1.4em]">
+                    <span id="hero-typewriter"></span><span class="blink-cursor" aria-hidden="true"></span>
+                </p>
+                <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] mb-6">
+                    Building Software<br />
+                    <span class="text-accent">that creates value</span>
+                </h1>
+                <p class="text-slate-300 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+                    I design and develop software solutions that integrate engineering, data, and automation.
+                </p>
 
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#projetos"
-                           class="inline-flex items-center justify-center gap-2 rounded-xl bg-accent hover:bg-accent-hover border border-accent hover:border-accent-hover text-white font-semibold px-6 py-3.5 transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(184,110,40,0.25)]">
-                           View Projects <i class="ph ph-arrow-right text-lg"></i>
-                        </a>
-                        <a href="#contatos"
-                           class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 text-white font-semibold px-6 py-3.5 transition-all hover:border-accent hover:bg-accent/10 hover:text-accent hover:-translate-y-0.5">
-                            <i class="ph ph-paper-plane-tilt text-lg"></i> Contact Me
-                        </a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#projetos"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl bg-accent hover:bg-accent-hover border border-accent hover:border-accent-hover text-white font-semibold px-6 py-3.5 transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(184,110,40,0.25)]">
+                        View Projects <i class="ph ph-arrow-right text-lg"></i>
+                    </a>
+                    <a href="#contatos"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 text-white font-semibold px-6 py-3.5 transition-all hover:border-accent hover:bg-accent/10 hover:text-accent hover:-translate-y-0.5">
+                        <i class="ph ph-paper-plane-tilt text-lg"></i> Contact Me
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap gap-4 pt-6 mt-8 border-t border-white/10 justify-center">
+                    <div class="flex items-center gap-3 border border-white/10 rounded-xl px-4 py-2.5">
+                        <span class="font-mono font-bold text-xl text-white" id="hero-completed-count">0</span>
+                        <span class="status-badge status-completed"><span class="status-dot"></span>
+                            Completed</span>
                     </div>
-
-                    <div class="flex flex-wrap gap-4 pt-6 mt-8 border-t border-white/10 justify-center lg:justify-start">
-                        <div class="flex items-center gap-3 border border-white/10 rounded-xl px-4 py-2.5">
-                            <span class="font-mono font-bold text-xl text-white" id="hero-completed-count">0</span>
-                            <span class="status-badge status-completed"><span class="status-dot"></span> Completed</span>
-                        </div>
-                        <div class="flex items-center gap-3 border border-white/10 rounded-xl px-4 py-2.5">
-                            <span class="font-mono font-bold text-xl text-white" id="hero-active-count">0</span>
-                            <span class="status-badge status-dev"><span class="status-dot"></span> In Development</span>
-                        </div>
+                    <div class="flex items-center gap-3 border border-white/10 rounded-xl px-4 py-2.5">
+                        <span class="font-mono font-bold text-xl text-white" id="hero-active-count">0</span>
+                        <span class="status-badge status-dev"><span class="status-dot"></span> In Development</span>
                     </div>
                 </div>
             </div>
@@ -141,78 +144,134 @@
         <section id="sobre" class="py-24 border-b border-white/10">
             <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-14 items-start">
                 <div class="reveal">
-                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">About <span class="text-accent">me</span></h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">About <span
+                            class="text-accent">me</span></h2>
                     <div class="w-14 h-1 bg-accent rounded mb-6"></div>
                     <p class="text-slate-300 leading-relaxed mb-8">
-                        Software Engineer and Bachelor’s degree candidate in Information Systems, with experience in systems development and integration, API development, process automation, and data engineering. 
-                        I specialize in business requirements gathering, systems analysis, and the implementation of scalable solutions, 
+                        Software Engineer and Bachelor’s degree candidate in Information Systems, with experience in
+                        systems development and integration, API development, process automation, and data engineering.
+                        I specialize in business requirements gathering, systems analysis, and the implementation of
+                        scalable solutions,
                         as well as supporting decision-making through cloud technologies and software architecture.
                     </p>
                     <div class="flex flex-col gap-4 text-slate-300">
                         <div class="flex items-start gap-3">
                             <i class="ph ph-globe-hemisphere-west text-accent text-2xl mt-0.5"></i>
-                            <span><strong class="text-white">Web Applications &amp; Mobile Android:</strong> Combining responsive interfaces, high performance, and efficient back-ends to deliver an excellent user experience.</span>
+                            <span><strong class="text-white">Web Applications &amp; Mobile Android:</strong> Combining
+                                responsive interfaces, high performance, and efficient back-ends to deliver an excellent
+                                user experience.</span>
                         </div>
                         <div class="flex items-start gap-3">
                             <i class="ph ph-cpu text-accent text-2xl mt-0.5"></i>
-                            <span><strong class="text-white">Robust backend systems:</strong>Sustainable architectures using Java, Python, REST APIs, and microservices in Django and Spring Boot.</span>
+                            <span><strong class="text-white">Robust backend systems:</strong>Sustainable architectures
+                                using Java, Python, REST APIs, and microservices in Django and Spring Boot.</span>
                         </div>
                         <div class="flex items-start gap-3">
                             <i class="ph ph-robot text-accent text-2xl mt-0.5"></i>
-                            <span><strong class="text-white">Data Engineering:</strong> Building ETL/ELT pipelines, integrating multiple data sources, and automating processes for the efficient collection, transformation, and delivery of data.</span>
+                            <span><strong class="text-white">Data Engineering:</strong> Building ETL/ELT pipelines,
+                                integrating multiple data sources, and automating processes for the efficient
+                                collection, transformation, and delivery of data.</span>
                         </div>
                         <div class="flex items-start gap-3">
                             <i class="ph ph-chart-line-up text-accent text-2xl mt-0.5"></i>
-                            <span><strong class="text-white">Dashboards &amp; Analytics:</strong> Engineering and data analysis using Microsoft Power BI, transforming data into business intelligence and strategic insights to support the development of software solutions. </span>
+                            <span><strong class="text-white">Dashboards &amp; Analytics:</strong> Engineering and data
+                                analysis using Microsoft Power BI, transforming data into business intelligence and
+                                strategic insights to support the development of software solutions. </span>
                         </div>
+                    </div>
+
+                    <div class="mt-8 pt-2">
+                        <a href="https://wa.me/558296402650?text=Ol%C3%A1%20Lucas,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20marcar%20uma%20reuni%C3%A3o%20para%20conversarmos!"
+                            target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center gap-2.5 rounded-xl bg-accent hover:bg-accent-hover border border-accent hover:border-accent-hover text-white font-semibold px-6 py-3.5 transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(184,110,40,0.25)]">
+                            <i class="ph ph-calendar-check text-xl"></i> Let's set up a meeting
+                        </a>
                     </div>
                 </div>
 
                 <div class="reveal" style="transition-delay:0.12s">
-                    <h3 class="font-display text-xl font-semibold text-white mb-6">Stack &amp;  Technologies</h3>
+                    <h3 class="font-display text-xl font-semibold text-white mb-6">Stack &amp; Technologies</h3>
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
                             <p class="skill-group-title mb-3">Languages</p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-code"></i> Python</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-coffee"></i> Java</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-device-mobile"></i> Kotlin</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-code"></i> JavaScript</span>
-                            </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div>
-                            <p class="skill-group-title mb-3">Mobile &amp; Web | Backend</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-atom"></i>React.js</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-device-mobile"></i> Kotlin</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-leaf"></i> Spring Boot</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"> Django</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-lightning"></i> FastAPI</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-layout"></i> Tailwind CSS | Bootstrap</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-chart-bar"></i> Streamlit</span>
+                                <span
+                                    class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                        class="ph ph-code"></i> Python</span>
+                                <span
+                                    class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                        class="ph ph-coffee"></i> Java</span>
+                                <span
+                                    class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                        class="ph ph-device-mobile"></i> Kotlin</span>
+                                <span
+                                    class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                        class="ph ph-code"></i> JavaScript</span>
                             </div>
                         </div>
-                        <br>
-                        <div>
-                            <p class="skill-group-title mb-3">Data Engineering | RPA</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-database"></i> PostgreSQL </span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-hard-drive"></i> SQL &amp; NoSQL</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-arrows-clockwise"></i> CI/CD Pipelines</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-chart-pie-slice"></i>Microsoft Power BI</span>
-                                 <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-gear"></i> N8N &amp; RPA</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-spider"></i> Web Scraping / Selenium</span>
-                            </div>
+                    </div>
+                    <br>
+                    <div>
+                        <p class="skill-group-title mb-3">Mobile &amp; Web | Backend</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-atom"></i>React.js</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-device-mobile"></i> Kotlin</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-leaf"></i> Spring Boot</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium">
+                                Django</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-lightning"></i> FastAPI</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-layout"></i> Tailwind CSS | Bootstrap</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-chart-bar"></i> Streamlit</span>
                         </div>
-                        <br>
-                        <div>
-                            <p class="skill-group-title mb-3">Cloud</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-docker-logo"></i> Docker / Kubernetes</span>
-                                <span class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i class="ph ph-cloud"></i> GCP / AWS</span>
-                            </div>
+                    </div>
+                    <br>
+                    <div>
+                        <p class="skill-group-title mb-3">Data Engineering | RPA</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-database"></i> PostgreSQL </span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-hard-drive"></i> SQL &amp; NoSQL</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-arrows-clockwise"></i> CI/CD Pipelines</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-chart-pie-slice"></i>Microsoft Power BI</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-gear"></i> N8N &amp; RPA</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-spider"></i> Web Scraping / Selenium</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <p class="skill-group-title mb-3">Cloud</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-docker-logo"></i> Docker / Kubernetes</span>
+                            <span
+                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
+                                    class="ph ph-cloud"></i> GCP / AWS</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,7 +279,8 @@
         <section id="projetos" class="py-24 bg-dark border-b border-white/10">
             <div class="max-w-7xl mx-auto px-4 md:px-8">
                 <div class="text-center mb-12 reveal">
-                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4"> Featured <span class="text-accent"> Projects </span></h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4"> Featured <span
+                            class="text-accent"> Projects </span></h2>
                     <div class="w-14 h-1 bg-accent rounded mx-auto mb-5"></div>
                     <p class="text-slate-300 max-w-xl mx-auto">
                         Explore solutions developed for manufacturing, automation projects, and analytical engineering.
@@ -229,18 +289,22 @@
 
                 <div class="flex justify-center mb-6 reveal">
                     <div class="relative w-full md:w-2/3 lg:w-1/2">
-                        <i class="ph ph-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-lg"></i>
-                        <input type="text" id="project-search"
-                               class="form-input w-full rounded-xl pl-11 pr-4 py-3"
-                               placeholder="arch by technology or project name...">
+                        <i
+                            class="ph ph-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-lg"></i>
+                        <input type="text" id="project-search" class="form-input w-full rounded-xl pl-11 pr-4 py-3"
+                            placeholder="arch by technology or project name...">
                     </div>
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-2 mb-10 reveal" id="filter-container">
-                    <button class="filter-btn active rounded-full px-5 py-2 text-sm font-medium" data-filter="all">All</button>
-                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium" data-filter="software">Software Engineering</button>
-                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium" data-filter="dados">Data Egineering &amp; Analytics</button>
-                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium" data-filter="automacao"> Automation &amp; RPA</button>
+                    <button class="filter-btn active rounded-full px-5 py-2 text-sm font-medium"
+                        data-filter="all">All</button>
+                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium"
+                        data-filter="software">Software Engineering</button>
+                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium" data-filter="dados">Data
+                        Egineering &amp; Analytics</button>
+                    <button class="filter-btn rounded-full px-5 py-2 text-sm font-medium" data-filter="automacao">
+                        Automation &amp; RPA</button>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid"></div>
@@ -250,30 +314,37 @@
         <section id="contatos" class="py-24">
             <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-14">
                 <div class="reveal">
-                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">What <span class="text-accent">to chat?</span></h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">What <span
+                            class="text-accent">to chat?</span></h2>
                     <div class="w-14 h-1 bg-accent rounded mb-6"></div>
                     <p class="text-slate-300 mb-10 leading-relaxed">
-                        Open to new opportunities in projects, technical consulting in automation, systems architecture, and data pipelines.
+                        Open to new opportunities in projects, technical consulting in automation, systems architecture,
+                        and data pipelines.
                     </p>
 
                     <div class="flex flex-col gap-5">
-                        <a href="mailto:vinidev.eng@gmail.com" class="flex items-center gap-4 text-slate-300 no-underline group">
-                            <div class="bg-card border border-white/10 rounded-full w-12 h-12 flex items-center justify-center group-hover:border-accent transition-colors">
+                        <a href="mailto:vinidev.eng@gmail.com"
+                            class="flex items-center gap-4 text-slate-300 no-underline group">
+                            <div
+                                class="bg-card border border-white/10 rounded-full w-12 h-12 flex items-center justify-center group-hover:border-accent transition-colors">
                                 <i class="ph ph-envelope-simple text-white text-xl"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-accent mb-0.5">Contact Email<p>
+                                <p class="text-xs text-accent mb-0.5">Contact Email
+                                <p>
                                 <p class="font-medium text-white mb-0">vinidev.eng@gmail.com</p>
                             </div>
                         </a>
 
-                        <a href="https://linkedin.com/in/lucasvinicius" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 text-slate-300 no-underline group">
-                            <div class="bg-card border border-white/10 rounded-full w-12 h-12 flex items-center justify-center group-hover:border-accent transition-colors">
+                        <a href="https://linkedin.com/in/lucasvinicius-eng" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-4 text-slate-300 no-underline group">
+                            <div
+                                class="bg-card border border-white/10 rounded-full w-12 h-12 flex items-center justify-center group-hover:border-accent transition-colors">
                                 <i class="ph ph-linkedin-logo text-white text-xl"></i>
                             </div>
                             <div>
                                 <p class="text-xs text-accent mb-0.5">LinkedIn</p>
-                                <p class="font-medium text-white mb-0">linkedin.com/in/lucas-vinicius-ds</p>
+                                <p class="font-medium text-white mb-0">linkedin.com/in/lucasvinicius-eng</p>
                             </div>
                         </a>
                     </div>
@@ -284,18 +355,21 @@
                         <form id="contact-form" novalidate>
                             <div class="mb-5">
                                 <label for="name" class="block text-sm text-slate-300 mb-2">Your Name / Company</label>
-                                <input type="text" id="name" required class="form-input w-full rounded-lg px-4 py-3" placeholder="Ex: Maria Silva">
+                                <input type="text" id="name" required class="form-input w-full rounded-lg px-4 py-3"
+                                    placeholder="Ex: Maria Silva">
                             </div>
                             <div class="mb-5">
                                 <label for="email" class="block text-sm text-slate-300 mb-2">Contact Email</label>
-                                <input type="email" id="email" required class="form-input w-full rounded-lg px-4 py-3" placeholder="seu.email@empresa.com">
+                                <input type="email" id="email" required class="form-input w-full rounded-lg px-4 py-3"
+                                    placeholder="seu.email@empresa.com">
                             </div>
                             <div class="mb-5">
                                 <label for="message" class="block text-sm text-slate-300 mb-2">Your Message</label>
-                                <textarea id="message" rows="4" required class="form-input w-full rounded-lg px-4 py-3" placeholder="Conte brevemente sobre o projeto ou necessidade..."></textarea>
+                                <textarea id="message" rows="4" required class="form-input w-full rounded-lg px-4 py-3"
+                                    placeholder="Conte brevemente sobre o projeto ou necessidade..."></textarea>
                             </div>
                             <button type="submit"
-                                    class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-accent hover:bg-accent-hover border border-accent hover:border-accent-hover text-white font-semibold py-3.5 transition-all">
+                                class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-accent hover:bg-accent-hover border border-accent hover:border-accent-hover text-white font-semibold py-3.5 transition-all">
                                 Enviar Mensagem <i class="ph ph-paper-plane-right"></i>
                             </button>
                         </form>
@@ -320,20 +394,25 @@
             </div>
 
             <div class="flex justify-center gap-3">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vinidev.eng@gmail.com&su=Olá,+vamos+fechar+um+projeto..." target="_blank"
-                   class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all" aria-label="E-mail">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vinidev.eng@gmail.com&su=Olá,+vamos+fechar+um+projeto..."
+                    target="_blank"
+                    class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all"
+                    aria-label="E-mail">
                     <i class="ph ph-envelope-simple text-lg"></i>
                 </a>
                 <a href="https://linkedin.com/in/lucas-vinicius-ds" target="_blank" rel="noopener noreferrer"
-                   class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all" aria-label="LinkedIn">
+                    class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all"
+                    aria-label="LinkedIn">
                     <i class="ph ph-linkedin-logo text-lg"></i>
                 </a>
                 <a href="https://github.com/lucasvinicius" target="_blank" rel="noopener noreferrer"
-                   class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all" aria-label="GitHub">
+                    class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all"
+                    aria-label="GitHub">
                     <i class="ph ph-github-logo text-lg"></i>
                 </a>
                 <a href="https://wa.me/558296402650" target="_blank" rel="noopener noreferrer"
-                   class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all" aria-label="WhatsApp">
+                    class="bg-card rounded-full w-11 h-11 flex items-center justify-center border border-white/10 text-white no-underline hover:border-accent hover:text-accent transition-all"
+                    aria-label="WhatsApp">
                     <i class="ph ph-whatsapp-logo text-lg"></i>
                 </a>
             </div>
@@ -349,10 +428,12 @@
         </div>
         <div class="status-bar-right">
             <span class="status-bar-segment hidden sm:flex">UTF-8</span>
-            <button type="button" id="status-back-to-top" class="status-bar-segment clickable" aria-label="Voltar ao topo">
+            <button type="button" id="status-back-to-top" class="status-bar-segment clickable"
+                aria-label="Voltar ao topo">
                 <i class="ph ph-arrow-up"></i> Back to top
             </button>
         </div>
     </div>
 </body>
+
 </html>

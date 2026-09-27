@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-const grid = document.getElementById('projects-grid');
-const filterBtns = document.querySelectorAll('.filter-btn');
-const searchInput = document.getElementById('project-search');
+    const grid = document.getElementById('projects-grid');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const searchInput = document.getElementById('project-search');
     function renderProjects(filterValue = 'all', searchQuery = '') {
         if (!grid) return;
         grid.innerHTML = '';
@@ -77,8 +77,8 @@ const searchInput = document.getElementById('project-search');
             const matchesCategory = filterValue === 'all' || p.category === filterValue;
             const q = searchQuery.toLowerCase();
             const matchesSearch = p.title.toLowerCase().includes(q) ||
-                                   p.desc.toLowerCase().includes(q) ||
-                                   p.tech.some(t => t.toLowerCase().includes(q));
+                p.desc.toLowerCase().includes(q) ||
+                p.tech.some(t => t.toLowerCase().includes(q));
             return matchesCategory && matchesSearch;
         });
 
@@ -357,7 +357,7 @@ const searchInput = document.getElementById('project-search');
         const phrases = [
             'SOFTWARE & DATA ENGINEER',
             'Hi👋🏾Welcome,my name is Lucas Vinicius!',
-            'Scalability, Efficiency & Security'            
+            'Scalability, Efficiency & Security'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
