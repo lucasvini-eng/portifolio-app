@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>👋🏾Welcome my to projects!</title>
+    <title>Portifólio | LVS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -56,7 +56,7 @@
             <ul class="flex flex-col items-center gap-4 text-center">
                 <li><a class="nav-link" href="#home">Home</a></li>
                 <li><a class="nav-link" href="#sobre">About me</a></li>
-                <li><a class="nav-link" href="#projetos">Projects/a></li>
+                <li><a class="nav-link" href="#projetos">Projects</a></li>
                 <li><a class="nav-link" href="#contatos">Contacts</a></li>
                 <li class="pt-2">
                     <a href="https://github.com/LucasVini-eng" target="_blank" rel="noopener noreferrer"
@@ -70,7 +70,6 @@
 
     <main id="main-content">
         <section id="home" class="relative min-h-screen flex items-center justify-center pt-32 pb-16 overflow-hidden">
-            <div class="bg-grid absolute inset-0 pointer-events-none"></div>
             <div
                 class="glow-node absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] pointer-events-none">
             </div>
@@ -111,172 +110,71 @@
                 </div>
             </div>
         </section>
-
-        <div class="border-y border-white/10 bg-dark overflow-hidden">
-            <div class="ticker-track py-4">
-                <span class="ticker-item"><i class="ph ph-code text-accent"></i> Python</span>
-                <span class="ticker-item"><i class="ph ph-file-py text-accent"></i> Django</span>
-                <span class="ticker-item"><i class="ph ph-lightning text-accent"></i>FastAPI</span>
-                <span class="ticker-item"><i class="ph ph-coffee text-accent"></i> Java</span>
-                <span class="ticker-item"><i class="ph ph-leaf text-accent"></i> Spring Boot</span>
-                <span class="ticker-item"><i class="ph ph-database text-accent"></i> PostgreSQL</span>
-                <span class="ticker-item"><i class="ph ph-docker-logo text-accent"></i> Docker</span>
-                <span class="ticker-item"><i class="ph ph-cloud text-accent"></i> GCP / AWS</span>
-                <span class="ticker-item"><i class="ph ph-arrows-clockwise text-accent"></i> CI/CD</span>
-                <span class="ticker-item"><i class="ph ph-gear text-accent"></i> N8N &amp; RPA</span>
-                <span class="ticker-item"><i class="ph ph-chart-pie-slice text-accent"></i> Power BI</span>
-                <span class="ticker-item"><i class="ph ph-code text-accent"></i> JavaScript</span>
-                <!-- duplicated for a seamless loop -->
-                <span class="ticker-item"><i class="ph ph-code text-accent"></i> Python</span>
-                <span class="ticker-item"><i class="ph ph-file-py text-accent"></i> Django</span>
-                <span class="ticker-item"><i class="ph ph-lightning text-accent"></i> FastAPI</span>
-                <span class="ticker-item"><i class="ph ph-coffee text-accent"></i> Java</span>
-                <span class="ticker-item"><i class="ph ph-leaf text-accent"></i> Spring Boot</span>
-                <span class="ticker-item"><i class="ph ph-database text-accent"></i> PostgreSQL</span>
-                <span class="ticker-item"><i class="ph ph-docker-logo text-accent"></i> Docker</span>
-                <span class="ticker-item"><i class="ph ph-cloud text-accent"></i> GCP / AWS</span>
-                <span class="ticker-item"><i class="ph ph-arrows-clockwise text-accent"></i> CI/CD</span>
-                <span class="ticker-item"><i class="ph ph-gear text-accent"></i> N8N &amp; RPA</span>
-                <span class="ticker-item"><i class="ph ph-chart-pie-slice text-accent"></i> Power BI</span>
-                <span class="ticker-item"><i class="ph ph-code text-accent"></i> JavaScript</span>
-            </div>
-        </div>
-        <section id="sobre" class="py-24 border-b border-white/10">
-            <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-14 items-start">
-                <div class="reveal">
-                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">About <span
-                            class="text-accent">me</span></h2>
-                    <div class="w-14 h-1 bg-accent rounded mb-6"></div>
-                    <p class="text-slate-300 leading-relaxed mb-8">
-                        Software Engineer and Bachelor’s degree candidate in Information Systems, with experience in
-                        systems development and integration, API development, process automation, and data engineering.
-                        I specialize in business requirements gathering, systems analysis, and the implementation of
-                        scalable solutions,
-                        as well as supporting decision-making through cloud technologies and software architecture.
+        <section id="sobre" class="py-24 border-b border-white/10">
+            <div class="max-w-4xl mx-auto px-4 md:px-8 reveal" id="about-chatbot-section">
+                <div class="text-center mb-8">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium border border-accent/40 bg-accent/10 text-accent mb-3">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Lucas Assistant &bull; QA &amp; Dev Bot
+                    </span>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-3">
+                        About <span class="text-accent">Lucas</span>
+                    </h2>
+                    <div class="w-14 h-1 bg-accent rounded mx-auto mb-4"></div>
+                    <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+                        Converse com o assistente interativo ou selecione uma pergunta predefinida para explorar minha atuação em QA, testes de segurança, stack de desenvolvimento e trajetória em dados.
                     </p>
-                    <div class="flex flex-col gap-4 text-slate-300">
-                        <div class="flex items-start gap-3">
-                            <i class="ph ph-globe-hemisphere-west text-accent text-2xl mt-0.5"></i>
-                            <span><strong class="text-white">Web Applications &amp; Mobile Android:</strong> Combining
-                                responsive interfaces, high performance, and efficient back-ends to deliver an excellent
-                                user experience.</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i class="ph ph-cpu text-accent text-2xl mt-0.5"></i>
-                            <span><strong class="text-white">Robust backend systems:</strong>Sustainable architectures
-                                using Java, Python, REST APIs, and microservices in Django and Spring Boot.</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i class="ph ph-robot text-accent text-2xl mt-0.5"></i>
-                            <span><strong class="text-white">Data Engineering:</strong> Building ETL/ELT pipelines,
-                                integrating multiple data sources, and automating processes for the efficient
-                                collection, transformation, and delivery of data.</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i class="ph ph-chart-line-up text-accent text-2xl mt-0.5"></i>
-                            <span><strong class="text-white">Dashboards &amp; Analytics:</strong> Engineering and data
-                                analysis using Microsoft Power BI, transforming data into business intelligence and
-                                strategic insights to support the development of software solutions. </span>
-                        </div>
-                    </div>
-
-                    <div class="mt-8 pt-2">
-                        <a href="https://wa.me/558296402650?text=Ol%C3%A1%20Lucas,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20marcar%20uma%20reuni%C3%A3o%20para%20conversarmos!"
-                            target="_blank" rel="noopener noreferrer"
-                            class="inline-flex items-center justify-center gap-2.5 rounded-xl bg-accent hover:bg-accent-hover border border-accent hover:border-accent-hover text-white font-semibold px-6 py-3.5 transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(184,110,40,0.25)]">
-                            <i class="ph ph-calendar-check text-xl"></i> Let's set up a meeting
-                        </a>
-                    </div>
                 </div>
 
-                <div class="reveal" style="transition-delay:0.12s">
-                    <h3 class="font-display text-xl font-semibold text-white mb-6">Stack &amp; Technologies</h3>
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div>
-                            <p class="skill-group-title mb-3">Languages</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                        class="ph ph-code"></i> Python</span>
-                                <span
-                                    class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                        class="ph ph-coffee"></i> Java</span>
-                                <span
-                                    class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                        class="ph ph-device-mobile"></i> Kotlin</span>
-                                <span
-                                    class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                        class="ph ph-code"></i> JavaScript</span>
+                <div class="bg-card border border-white/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+                    <!-- Chat Header -->
+                    <div class="px-5 py-3.5 border-b border-white/10 bg-white/[0.02] flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="relative w-9 h-9 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-mono text-sm font-bold shrink-0">
+                                LV
+                                <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-card"></span>
+                            </div>
+                            <div>
+                                <p class="text-white text-sm font-semibold leading-none mb-1">Lucas AI Assistant</p>
+                                <p class="text-slate-400 text-xs leading-none">Software Engineer &bull; QA / Security Testing</p>
                             </div>
                         </div>
+                        <button type="button" id="chat-reset-btn" class="text-slate-400 hover:text-white text-xs px-2.5 py-1.5 rounded-lg border border-white/10 hover:border-white/20 transition-all flex items-center gap-1.5" title="Reiniciar conversa">
+                            <i class="ph ph-arrow-counter-clockwise"></i> <span>Limpar</span>
+                        </button>
                     </div>
-                    <br>
-                    <div>
-                        <p class="skill-group-title mb-3">Mobile &amp; Web | Backend</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-atom"></i>React.js</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-device-mobile"></i> Kotlin</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-leaf"></i> Spring Boot</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium">
-                                Django</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-lightning"></i> FastAPI</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-layout"></i> Tailwind CSS | Bootstrap</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-chart-bar"></i> Streamlit</span>
+
+                    <!-- Chat Messages Scroll Area -->
+                    <div id="chat-messages" class="p-4 md:p-6 space-y-4 max-h-[380px] min-h-[220px] overflow-y-auto">
+                        <!-- Mensagens inseridas via JavaScript -->
+                    </div>
+
+                    <!-- Predefined Flows (Perguntas Frequentes) -->
+                    <div class="px-4 md:px-6 py-3 border-t border-white/10 bg-white/[0.01]">
+                        <p class="text-xs font-mono text-accent uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                            <i class="ph ph-chat-circle-dots"></i> Perguntas Frequentes / Predefined Flows:
+                        </p>
+                        <div id="chat-quick-replies" class="flex flex-wrap gap-2">
+                            <!-- Inserido dinamicamente via JS -->
                         </div>
                     </div>
-                    <br>
-                    <div>
-                        <p class="skill-group-title mb-3">Data Engineering | RPA</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-database"></i> PostgreSQL </span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-hard-drive"></i> SQL &amp; NoSQL</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-arrows-clockwise"></i> CI/CD Pipelines</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-chart-pie-slice"></i>Microsoft Power BI</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-gear"></i> N8N &amp; RPA</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-spider"></i> Web Scraping / Selenium</span>
-                        </div>
-                    </div>
-                    <br>
-                    <div>
-                        <p class="skill-group-title mb-3">Cloud</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-docker-logo"></i> Docker / Kubernetes</span>
-                            <span
-                                class="skill-tag inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><i
-                                    class="ph ph-cloud"></i> GCP / AWS</span>
-                        </div>
-                    </div>
+
+                    <!-- Chat Input Form -->
+                    <form id="chat-form" class="p-3 md:p-4 border-t border-white/10 bg-white/[0.02] flex items-center gap-2">
+                        <input type="text" id="chat-input"
+                            class="form-input flex-1 rounded-xl px-4 py-2.5 text-sm bg-darker/60 border-white/10 text-white placeholder-slate-500 focus:border-accent"
+                            placeholder="Faça uma pergunta sobre QA, tecnologias, problemas de negócio..."
+                            autocomplete="off">
+                        <button type="submit"
+                            class="inline-flex items-center justify-center gap-1.5 rounded-xl bg-accent hover:bg-accent-hover text-white font-semibold px-4 py-2.5 text-sm transition-all shrink-0">
+                            <span>Enviar</span>
+                            <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
-        <section id="projetos" class="py-24 bg-dark border-b border-white/10">
+        <section id="projetos" class="py-24 bg-[#0d0e12] border-b border-white/10">
             <div class="max-w-7xl mx-auto px-4 md:px-8">
                 <div class="text-center mb-12 reveal">
                     <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4"> Featured <span
@@ -384,7 +282,7 @@
         </section>
     </main>
 
-    <footer class="bg-darker border-t border-white/10 py-10">
+    <footer class="glass-footer border-t border-white/10 py-10">
         <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="text-center md:text-left">
                 <p class="font-display text-lg font-bold text-white mb-1">

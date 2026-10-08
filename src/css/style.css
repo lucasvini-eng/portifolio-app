@@ -27,6 +27,11 @@ html {
 
 body {
     background-color: var(--color-darker);
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: top center;
     color: #f1f5f9;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
@@ -70,11 +75,9 @@ body {
 
 .bg-grid {
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-    background-size: 44px 44px;
-    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 90%);
-    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 90%);
+        linear-gradient(to right, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 40px 40px;
 }
 
 .bg-noise {
@@ -84,10 +87,15 @@ body {
 }
 
 
-.glass-header {
+.glass-header,
+.glass-footer,
+footer {
     background: rgba(6, 7, 9, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
@@ -250,6 +258,10 @@ body {
     border-color: var(--color-accent);
     color: var(--color-accent);
     transform: translateY(-2px);
+}
+
+#projetos {
+    background-color: #0d0e12;
 }
 
 .filter-btn {
@@ -502,6 +514,69 @@ body {
 
 .status-bar-right {
     margin-left: auto;
+}
+
+/* About Chatbot Styles */
+#chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+#chat-messages::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+#chat-messages::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+}
+
+.chat-bubble-bot {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px 16px 16px 4px;
+    color: #cbd5e1;
+}
+
+.chat-bubble-user {
+    background: rgba(184, 110, 40, 0.18);
+    border: 1px solid rgba(184, 110, 40, 0.35);
+    border-radius: 16px 16px 4px 16px;
+    color: #ffffff;
+}
+
+.quick-reply-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+    font-size: 0.78rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.quick-reply-btn:hover {
+    background: rgba(184, 110, 40, 0.16);
+    border-color: var(--color-accent);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.typing-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    animation: typingPulse 1.2s infinite ease-in-out;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingPulse {
+    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+    40% { transform: scale(1.1); opacity: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {

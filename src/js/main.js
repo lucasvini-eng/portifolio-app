@@ -355,8 +355,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const typeTarget = document.getElementById('hero-typewriter');
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
-            'SOFTWARE & DATA ENGINEER',
-            'Hi👋🏾Welcome,my name is Lucas Vinicius!',
+            'Software engineer & QA / Security',
+            '👋🏾Welcome my to projects!',
             'Scalability, Efficiency & Security'
         ];
         let phraseIndex = 0;
@@ -390,4 +390,217 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (typeTarget) {
         typeTarget.textContent = 'SOFTWARE ENGINEER';
     }
+
+    // --- About Chatbot Implementation ---
+    function initAboutChatbot() {
+        const chatMessages = document.getElementById('chat-messages');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const quickRepliesContainer = document.getElementById('chat-quick-replies');
+        const resetBtn = document.getElementById('chat-reset-btn');
+
+        if (!chatMessages || !chatForm || !chatInput || !quickRepliesContainer) return;
+
+        const chatbotData = {
+            welcome: `Olá! Sou o assistente virtual do **Lucas Vinicius**. 👋\n\nSou **Software Engineer** especializado em **Software Security Testing / QA**, bacharel em Sistemas de Informação.\n\nEscolha uma das perguntas frequentes abaixo ou digite sua dúvida no campo para explorar minha atuação técnica e background!`,
+            flows: [
+                {
+                    id: 'qa',
+                    label: '🎯 Especialidade & QA',
+                    query: 'Qual é a sua especialidade e atuação em QA?',
+                    keywords: ['qa', 'qualidade', 'teste', 'test', 'segurança', 'security', 'especialidade', 'vulnerabilidade', 'bug', 'bugs', 'assurance', 'unit'],
+                    response: `Sou **Engenheiro de Software especializado em Software Security Testing / QA** e bacharel em Sistemas de Informação.\n\n• **Foco:** Garantir alta confiabilidade, segurança e maturidade de código antes que chegue a produção.\n• **Prática:** Desenvolvimento orientado a testes, testes unitários, testes de integração e automação com **Selenium**.\n• **Segurança:** Testes de segurança em aplicações e APIs para mitigação preventiva de vulnerabilidades e regras de negócio críticas.`
+                },
+                {
+                    id: 'stack',
+                    label: '🛠️ Tecnologias & Stack',
+                    query: 'Quais tecnologias você usa no dia a dia?',
+                    keywords: ['stack', 'tecnologia', 'tecnologias', 'ferramenta', 'ferramentas', 'python', 'java', 'spring', 'fastapi', 'selenium', 'django', 'gcp', 'aws', 'infra', 'nuvem', 'cloud'],
+                    response: `No meu dia a dia de trabalho, utilizo:\n\n• **Linguagens & Frameworks:** Python, Java, Spring Boot, FastAPI e Django\n• **Qualidade & Testes:** Selenium, testes unitários e automação de testes\n• **Bancos de Dados:** PostgreSQL, modelagem relacional, SQL e NoSQL\n• **Cloud & Infraestrutura:** Google Cloud Platform (GCP) e Amazon Web Services (AWS)\n• **Automação & Integração:** N8N, RPA, Web Scraping e pipelines de CI/CD.`
+                },
+                {
+                    id: 'problems',
+                    label: '🧩 Resolução de Problemas',
+                    query: 'Qual é a sua abordagem para resolver problemas complexos?',
+                    keywords: ['problema', 'problemas', 'complexo', 'complexos', 'negocio', 'impacto', 'business', 'solucao', 'valor', 'decisao'],
+                    response: `Gosto muito de **resolver problemas complexos que muitas vezes parecem simples, mas têm um impacto direto no negócio**.\n\n• Muitos gargalos técnicos ou vulnerabilidades parecem triviais, mas geram custos altos ou riscos operacionais se ignorados.\n• Minha abordagem une análise de requisitos de negócio, testes rigorosos e código limpo para construir soluções sustentáveis que geram valor real.`
+                },
+                {
+                    id: 'transition',
+                    label: '🔄 Transição de Dados para Dev',
+                    query: 'Como foi sua transição de Ciência de Dados para Software?',
+                    keywords: ['dado', 'dados', 'data', 'ciencia', 'transicao', 'migracao', 'trajetoria', 'carreira', 'historico', 'power bi'],
+                    response: `Iniciei meus estudos e graduação na área de **Ciência de Dados**, mas migrei completamente para o **desenvolvimento de software**.\n\nO principal diferencial é que **trouxe comigo todo o conhecimento relevante**:\n• Visão analítica para modelagem de banco de dados e arquitetura de dados;\n• Facilidade com pipelines de dados (ETL/ELT), scripts e automação de processos;\n• Domínio de métricas para suporte à tomada de decisões em projetos de software.`
+                },
+                {
+                    id: 'apis',
+                    label: '⚡ APIs, Testes & Automação',
+                    query: 'Qual sua experiência com desenvolvimento de APIs e automação?',
+                    keywords: ['api', 'apis', 'rest', 'backend', 'automacao', 'rpa', 'selenium', 'scraping', 'unitarios', 'banco', 'database'],
+                    response: `Tenho ampla experiência com:\n\n• **Desenvolvimento de APIs:** Criação de APIs REST robustas, rápidas e seguras com **FastAPI, Spring Boot e Django**;\n• **Qualidade & Testes Unitários:** Implementação de suítes de testes unitários para garantir regras estáveis;\n• **Bancos de Dados & Automação:** Gestão de bancos de dados relacionais e automação de processos com **Selenium** e RPA.`
+                },
+                {
+                    id: 'contact',
+                    label: '💼 Contato & Parceria',
+                    query: 'Como podemos trabalhar juntos ou marcar uma conversa?',
+                    keywords: ['contato', 'contratar', 'trabalhar', 'reuniao', 'email', 'whatsapp', 'linkedin', 'conversar', 'parceria', 'vaga'],
+                    response: `Estou sempre aberto a novas oportunidades profissionais, vagas e projetos!\n\nEntre em contato direto:\n• 💬 **WhatsApp:** [Conversar no WhatsApp](https://wa.me/558296402650?text=Ol%C3%A1%20Lucas,%20vi%20seu%20portf%C3%B3lio!)\n• 📧 **E-mail:** [vinidev.eng@gmail.com](mailto:vinidev.eng@gmail.com)\n• 💼 **LinkedIn:** [Perfil no LinkedIn](https://linkedin.com/in/lucas-vinicius-ds)\n• Ou preencha o formulário na seção [Contatos](#contatos)!`
+                }
+            ]
+        };
+
+        function escapeHTML(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function formatMarkdown(text) {
+            let escaped = escapeHTML(text);
+            // Links [title](url)
+            escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:text-accent-hover font-medium">$1</a>');
+            // Bold **text**
+            escaped = escaped.replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>');
+            // Bullets • text
+            const lines = escaped.split('\n');
+            const formatted = lines.map(line => {
+                if (line.startsWith('• ')) {
+                    return `<div class="flex items-start gap-2 ml-1 my-0.5"><span class="text-accent">•</span><span>${line.substring(2)}</span></div>`;
+                }
+                return line;
+            }).join('<br>');
+            return formatted;
+        }
+
+        function appendMessage(role, text) {
+            const wrapper = document.createElement('div');
+            if (role === 'user') {
+                wrapper.className = 'flex justify-end animate-slide-up';
+                wrapper.innerHTML = `
+                    <div class="chat-bubble-user p-3.5 max-w-[85%] text-sm font-medium leading-relaxed shadow-sm">
+                        ${escapeHTML(text)}
+                    </div>
+                `;
+            } else {
+                wrapper.className = 'flex items-start gap-3 animate-slide-up';
+                wrapper.innerHTML = `
+                    <div class="w-7 h-7 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-mono text-xs font-bold shrink-0 mt-0.5">
+                        LV
+                    </div>
+                    <div class="chat-bubble-bot p-4 max-w-[88%] text-sm leading-relaxed space-y-1 shadow-sm">
+                        ${formatMarkdown(text)}
+                    </div>
+                `;
+            }
+            chatMessages.appendChild(wrapper);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            const indicator = document.createElement('div');
+            indicator.id = 'chat-typing-indicator';
+            indicator.className = 'flex items-start gap-3';
+            indicator.innerHTML = `
+                <div class="w-7 h-7 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-mono text-xs font-bold shrink-0 mt-0.5">
+                    LV
+                </div>
+                <div class="chat-bubble-bot px-4 py-3 text-sm flex items-center gap-1.5">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            `;
+            chatMessages.appendChild(indicator);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function removeTypingIndicator() {
+            const indicator = document.getElementById('chat-typing-indicator');
+            if (indicator) indicator.remove();
+        }
+
+        function renderQuickReplies() {
+            quickRepliesContainer.innerHTML = '';
+            chatbotData.flows.forEach(flow => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'quick-reply-btn';
+                btn.innerHTML = `<span>${flow.label}</span>`;
+                btn.addEventListener('click', () => {
+                    handleUserQuestion(flow.query, flow.response);
+                });
+                quickRepliesContainer.appendChild(btn);
+            });
+        }
+
+        function normalizeText(str) {
+            return str
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function findBestResponse(userText) {
+            const normalizedQuery = normalizeText(userText);
+            let bestMatch = null;
+            let highestScore = 0;
+
+            chatbotData.flows.forEach(flow => {
+                let score = 0;
+                flow.keywords.forEach(kw => {
+                    const normKw = normalizeText(kw);
+                    if (normalizedQuery.includes(normKw)) {
+                        score += 2;
+                    }
+                });
+                if (normalizedQuery.includes(normalizeText(flow.query))) {
+                    score += 5;
+                }
+                if (score > highestScore) {
+                    highestScore = score;
+                    bestMatch = flow;
+                }
+            });
+
+            if (bestMatch && highestScore > 0) {
+                return bestMatch.response;
+            }
+
+            return `Sou **Engenheiro de Software especializado em Software Security Testing / QA** e bacharel em Sistemas de Informação. Trabalho com **Python, Java, Spring Boot, FastAPI, Selenium, Django, bancos de dados e GCP/AWS**.\n\nGosto de resolver problemas complexos com impacto direto no negócio e trouxe toda a minha bagagem de Ciência de Dados para o desenvolvimento de software.\n\nSe quiser explorar detalhes específicos, clique nas perguntas frequentes abaixo ou pergunte sobre minha atuação em QA, stack, resolução de problemas ou formas de contato!`;
+        }
+
+        function handleUserQuestion(question, forcedResponse = null) {
+            appendMessage('user', question);
+            showTypingIndicator();
+
+            const response = forcedResponse || findBestResponse(question);
+
+            setTimeout(() => {
+                removeTypingIndicator();
+                appendMessage('bot', response);
+            }, 380);
+        }
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const text = chatInput.value.trim();
+            if (!text) return;
+            chatInput.value = '';
+            handleUserQuestion(text);
+        });
+
+        if (resetBtn) {
+            resetBtn.addEventListener('click', () => {
+                chatMessages.innerHTML = '';
+                appendMessage('bot', chatbotData.welcome);
+            });
+        }
+
+        // Initialize chat
+        appendMessage('bot', chatbotData.welcome);
+        renderQuickReplies();
+    }
+
+    initAboutChatbot();
 });
+
