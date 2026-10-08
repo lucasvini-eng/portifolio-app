@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typeTarget = document.getElementById('hero-typewriter');
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
-            'Software engineer & QA / Security',
+            'Software engineer & QA / Security Testing',
             '👋🏾Welcome my to projects!',
             'Scalability, Efficiency & Security'
         ];
@@ -402,7 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!chatMessages || !chatForm || !chatInput || !quickRepliesContainer) return;
 
         const chatbotData = {
-            welcome: `Olá! Sou o assistente virtual do **Lucas Vinicius**. 👋\n\nSou **Software Engineer** especializado em **Software Security Testing / QA**, bacharel em Sistemas de Informação.\n\nEscolha uma das perguntas frequentes abaixo ou digite sua dúvida no campo para explorar minha atuação técnica e background!`,
+            welcome: `Olá! Sou o assistente virtual do **Lucas Vinicius**.`,
             flows: [
                 {
                     id: 'qa',
