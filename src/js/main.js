@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 2,
-            title: "Link Shortening System (LSS)",
-            category: "software",
+            title: "LVS Bio",
+            category: "frontend",
             status: "completed",
-            statusText: "Completed ✅",
+            statusText: "Finalizado",
             desc: "A web-based URL shortening system that generates short, secure links, with a focus on simplicity, security, and traceability.",
             tech: ["Python", "Streamlit", "Validators", "Pyshorteners", "Streamlit Community Cloud"],
             codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typeTarget = document.getElementById('hero-typewriter');
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
-            'Software engineer & QA / Security Testing',
+            'Software engineer',
             '👋🏾Welcome my to projects!',
             'Scalability, Efficiency & Security'
         ];
@@ -391,7 +391,6 @@ document.addEventListener('DOMContentLoaded', () => {
         typeTarget.textContent = 'SOFTWARE ENGINEER';
     }
 
-    // --- About Chatbot Implementation ---
     function initAboutChatbot() {
         const chatMessages = document.getElementById('chat-messages');
         const chatForm = document.getElementById('chat-form');
@@ -402,14 +401,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!chatMessages || !chatForm || !chatInput || !quickRepliesContainer) return;
 
         const chatbotData = {
-            welcome: `Olá! Sou o assistente virtual do **Lucas Vinicius**.`,
+            welcome: `Hello! I'm **Lucas Vinicius**'s virtual assistant.`,
             flows: [
                 {
-                    id: 'qa',
-                    label: '🎯 Especialidade & QA',
-                    query: 'Qual é a sua especialidade e atuação em QA?',
-                    keywords: ['qa', 'qualidade', 'teste', 'test', 'segurança', 'security', 'especialidade', 'vulnerabilidade', 'bug', 'bugs', 'assurance', 'unit'],
-                    response: `Sou **Engenheiro de Software especializado em Software Security Testing / QA** e bacharel em Sistemas de Informação.\n\n• **Foco:** Garantir alta confiabilidade, segurança e maturidade de código antes que chegue a produção.\n• **Prática:** Desenvolvimento orientado a testes, testes unitários, testes de integração e automação com **Selenium**.\n• **Segurança:** Testes de segurança em aplicações e APIs para mitigação preventiva de vulnerabilidades e regras de negócio críticas.`
+                    id: 'transition',
+                    label: '🔄 Transição de Dados para Dev',
+                    query: 'Como foi sua transição de Ciência de Dados para Software?',
+                    keywords: ['dado', 'dados', 'data', 'ciencia', 'transicao', 'migracao', 'trajetoria', 'carreira', 'historico', 'power bi'],
+                    response: `Iniciei meus estudos e graduação na área de **Ciência de Dados**, mas migrei completamente para o **desenvolvimento de software**.\n\nO principal diferencial é que **trouxe comigo todo o conhecimento relevante**:\n• Visão analítica para modelagem de banco de dados e arquitetura de dados;\n• Facilidade com pipelines de dados (ETL/ELT), scripts e automação de processos;\n• Domínio de métricas para suporte à tomada de decisões em projetos de software.`
                 },
                 {
                     id: 'stack',
@@ -424,13 +423,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     query: 'Qual é a sua abordagem para resolver problemas complexos?',
                     keywords: ['problema', 'problemas', 'complexo', 'complexos', 'negocio', 'impacto', 'business', 'solucao', 'valor', 'decisao'],
                     response: `Gosto muito de **resolver problemas complexos que muitas vezes parecem simples, mas têm um impacto direto no negócio**.\n\n• Muitos gargalos técnicos ou vulnerabilidades parecem triviais, mas geram custos altos ou riscos operacionais se ignorados.\n• Minha abordagem une análise de requisitos de negócio, testes rigorosos e código limpo para construir soluções sustentáveis que geram valor real.`
-                },
-                {
-                    id: 'transition',
-                    label: '🔄 Transição de Dados para Dev',
-                    query: 'Como foi sua transição de Ciência de Dados para Software?',
-                    keywords: ['dado', 'dados', 'data', 'ciencia', 'transicao', 'migracao', 'trajetoria', 'carreira', 'historico', 'power bi'],
-                    response: `Iniciei meus estudos e graduação na área de **Ciência de Dados**, mas migrei completamente para o **desenvolvimento de software**.\n\nO principal diferencial é que **trouxe comigo todo o conhecimento relevante**:\n• Visão analítica para modelagem de banco de dados e arquitetura de dados;\n• Facilidade com pipelines de dados (ETL/ELT), scripts e automação de processos;\n• Domínio de métricas para suporte à tomada de decisões em projetos de software.`
                 },
                 {
                     id: 'apis',

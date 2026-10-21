@@ -1,9 +1,9 @@
 :root {
-    --color-accent: #b86e28;
+    --color-accent: #1693a5;
     --color-accent-hover: #98561c;
     --color-accent-light: #b86e281f;
     --color-accent-border: #b86e2859;
-    --color-dark: #0d0e12;
+    --color-dark: #060709;
     --color-darker: #060709;
     --color-card: #13151b;
     --color-card-hover: #1a1d26;
@@ -186,12 +186,6 @@ footer {
 .terminal-dot {
     width: 11px;
     height: 11px;
-    border-radius: 50%;
-}
-
-.glow-node {
-    background: radial-gradient(circle, rgba(184, 110, 40, 0.18) 0%, rgba(184, 110, 40, 0.04) 50%, transparent 70%);
-    filter: blur(80px);
     border-radius: 50%;
 }
 
