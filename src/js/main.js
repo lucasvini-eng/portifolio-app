@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <i class="ph ph-github-logo"></i> Código
                         </a>
                         <a href="${p.demoUrl}" target="_blank" rel="noopener noreferrer" title="Visualizar Live Demo"
-                           class="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-accent border border-accent text-white text-sm font-semibold py-2.5 hover:bg-accent-hover hover:border-accent-hover transition-all">
+                           class="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-accent border border-accent text-white hover:text-darker text-sm font-semibold py-2.5 hover:bg-accent-hover hover:border-accent-hover transition-all">
                             <i class="ph ph-arrow-square-out"></i> Acessar
                         </a>
                     </div>
@@ -355,9 +355,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const typeTarget = document.getElementById('hero-typewriter');
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
-            'Software engineer',
-            '👋🏾Welcome my to projects!',
-            'Scalability, Efficiency & Security'
+            'P:\\> Bem vindos(as) ao meu portifólio!',
+            'P:\\> Software engineer',
+            'P:\\> Escalabilidade, Eficiença e Segurança'
         ];
         let phraseIndex = 0;
         let charIndex = 0;

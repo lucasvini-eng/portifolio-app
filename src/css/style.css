@@ -1,10 +1,10 @@
 :root {
     --color-accent: #1693a5;
-    --color-accent-hover: #98561c;
-    --color-accent-light: #b86e281f;
+    --color-accent-hover: #f0f0d8;
+    --color-accent-light: #f0f0d8c0;
     --color-accent-border: #b86e2859;
-    --color-dark: #060709;
-    --color-darker: #060709;
+    --color-dark: #061319;
+    --color-darker: #061319;
     --color-card: #13151b;
     --color-card-hover: #1a1d26;
     --color-border: rgba(255, 255, 255, 0.08);
@@ -108,7 +108,7 @@ footer {
     width: 38px;
     height: 38px;
     object-fit: cover;
-    border: 2px solid var(--color-accent);
+    border: 2px solid var(--color-accent-light);
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
@@ -249,8 +249,8 @@ footer {
 }
 
 .skill-tag:hover {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
+    border-color: var(--color-card-hover);
+    color: var(--color-card-hover);
     transform: translateY(-2px);
 }
 
@@ -267,8 +267,8 @@ footer {
 
 .filter-btn:hover,
 .filter-btn.active {
-    border-color: var(--color-accent);
-    background-color: var(--color-accent-light);
+    border-color: var(--color-card-hover);
+    background-color: var(--color-card-hover);
     color: #ffffff;
 }
 
@@ -295,7 +295,7 @@ footer {
     transform: translateY(-6px);
     background-color: var(--color-card-hover);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(184, 110, 40, 0.15);
-    border-color: var(--color-accent-border);
+    border-color: var(--color-accent-light);
 }
 
 .project-prompt {
@@ -369,7 +369,6 @@ footer {
     }
 }
 
-/* Form inputs */
 .form-input {
     background-color: var(--color-darker);
     border: 1px solid var(--color-border);
@@ -444,20 +443,18 @@ footer {
     animation: slideUp 0.5s ease-out forwards;
 }
 
-/* Mobile nav */
 #mobile-menu {
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-/* VS Code-style status bar: the page's one signature element */
 .status-bar {
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     height: var(--statusbar-height);
-    background: var(--color-accent);
-    color: #1a1108;
+    background: #0d0e12;
+    color: #ffffff;
     font-family: 'Fira Code', monospace;
     font-size: 0.75rem;
     font-weight: 500;
@@ -466,6 +463,7 @@ footer {
     align-items: stretch;
     justify-content: space-between;
     user-select: none;
+    border-top: 1px solid var(--color-border);
 }
 
 .status-bar-progress {
@@ -473,7 +471,7 @@ footer {
     top: 0;
     left: 0;
     height: 2px;
-    background: rgba(6, 7, 9, 0.55);
+    background: var(--color-accent);
     width: 0%;
     transition: width 0.1s linear;
 }
@@ -496,7 +494,7 @@ footer {
 }
 
 .status-bar-segment.clickable:hover {
-    background: rgba(6, 7, 9, 0.15);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .status-bar-left,
@@ -510,7 +508,6 @@ footer {
     margin-left: auto;
 }
 
-/* About Chatbot Styles */
 #chat-messages::-webkit-scrollbar {
     width: 6px;
 }
@@ -571,6 +568,14 @@ footer {
 @keyframes typingPulse {
     0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
     40% { transform: scale(1.1); opacity: 1; }
+}
+
+/* Cor escura na fonte dos botões no hover */
+button[class*="hover:bg-accent-hover"]:hover,
+a[class*="hover:bg-accent-hover"]:hover,
+[class*="hover:bg-accent-hover"]:hover,
+[class*="hover:bg-accent-hover"]:hover * {
+    color: var(--color-darker) !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
