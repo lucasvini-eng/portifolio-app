@@ -12,6 +12,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             id: 1,
+            title: "LVS Bio - Link para bio de alta conversão",
+            category: "frontend",
+            status: "completed",
+            statusText: "Finalizado",
+            desc: "Uma página de destino de alto desempenho, otimizada para dispositivos móveis, do tipo “link na biografia”, com um chatbot de qualificação integrado e transferência automatizada de leads para o WhatsApp. Desenvolvida com padrões web padrão, Tailwind CSS e um backend em Node.js/Express.",
+            tech: ["Html", "CSS", "Tailwind CSS", "JavaScript", "Node.js"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
+            demoUrl: "https://project-002-linkshorteningsystem-lss.streamlit.app/"
+        },
+        {
+            id: 2,
+            title: "Quote Monitor ($) API",
+            category: "backend",
+            status: "dev",
+            statusText: "Em Manutenção",
+            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações estratégicas",
+            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "FastAPI"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
+            demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
+        },
+        {
+            id: 3,
+            title: "Dashboard Management (Power BI)",
+            category: "software",
+            status: "completed",
+            statusText: "Completed ✅",
+            desc: "Orchestration of interactive analytical views integrated into a customized web interface, accelerating decisions based on operational metrics..",
+            tech: ["Tailwind CSS", "JavaScript", "Power BI Embedded", "ETL", "Power Query"],
+            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
+            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
+        },
+        {
+            id: 5,
+            title: "Task Management API",
+            category: "software",
+            status: "completed",
+            statusText: "Completed ✅",
+            desc: "The project that was developed is an API for managing tasks, using Java and the Spring Boot framework. First, users are registered and validated, and their passwords are encrypted in the H2 database. Then, tasks are created and assigned to their respective users; they can be updated and organized into lists.",
+            tech: ["Java", "Spring Boot", "API REST"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
+            demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
+        },
+         {
+            id: 6,
             title: "Dashboard Management (Power BI)",
             category: "dados",
             status: "completed",
@@ -21,50 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
             codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
             demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
         },
-        {
-            id: 2,
-            title: "LVS Bio",
-            category: "frontend",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "A web-based URL shortening system that generates short, secure links, with a focus on simplicity, security, and traceability.",
-            tech: ["Python", "Streamlit", "Validators", "Pyshorteners", "Streamlit Community Cloud"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
-            demoUrl: "https://project-002-linkshorteningsystem-lss.streamlit.app/"
-        },
-        {
-            id: 3,
-            title: "Quote Monitor ($)",
-            category: "automacao",
-            status: "completed",
-            statusText: "Completed ✅",
-            desc: "Robotic Process Automation (RPA) for continuous monitoring of market quotes, automating the collection, processing, and dissemination of strategic information",
-            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "ETL"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
-            demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
-        },
-        {
-            id: 4,
-            title: "Absence Tracking (HR)",
-            category: "software",
-            status: "dev",
-            statusText: "In Development ⛏️",
-            desc: "An internal platform for automating requests, approvals, and tracking of vacation and leave, featuring a calendar, notifications, and dashboards for HR.",
-            tech: ["Python", "Django", "AWS RSD", "PostgreSQL", "Streamlit"],
-            codeUrl: "https://lucasvini-eng.github.io/project-announcement-2/",
-            demoUrl: "https://lucasvini-eng.github.io/project-announcement-2/"
-        },
-        {
-            id: 6,
-            title: "Task Management API",
-            category: "software",
-            status: "completed",
-            statusText: "Completed ✅",
-            desc: "The project that was developed is an API for managing tasks, using Java and the Spring Boot framework. First, users are registered and validated, and their passwords are encrypted in the H2 database. Then, tasks are created and assigned to their respective users; they can be updated and organized into lists.",
-            tech: ["Java", "Spring Boot", "API REST"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
-            demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
-        }
     ];
 
     const grid = document.getElementById('projects-grid');
@@ -356,7 +356,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
             'P:\\> Bem vindos(as) ao meu portifólio!',
-            'P:\\> Escalabilidade, Eficiença e Segurança'
+            'P:\\> Escalabilidade, Eficiença e Segurança',
+            '"Nossas maiores realizações não podem ficar para trás, porque nosso destino está acima de nós. Cooper - Interesletar."'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
