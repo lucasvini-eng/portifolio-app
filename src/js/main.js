@@ -356,7 +356,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
             'P:\\> Bem vindos(as) ao meu portifólio!',
-            'P:\\> Software engineer',
             'P:\\> Escalabilidade, Eficiença e Segurança'
         ];
         let phraseIndex = 0;
@@ -400,41 +399,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!chatMessages || !chatForm || !chatInput || !quickRepliesContainer) return;
 
+        let chatState = 'START';
+        let userName = '';
+        let pendingQuestion = null;
+
+        const sobreMimText = `Engenheiro de Software com 3 anos de experiência em dados e backend. Construo APIs, pipelines de dados (GCP/BigQuery) e automações que eliminam trabalho manual.\n\nNa Construtora R Pontes, modelei um Data Warehouse no BigQuery que reduziu em 70% o tempo de análise e manutenção. Como autônomo, criei um funil de vendas que cortou o atendimento de 30 para 10 minutos e captou 10x mais leads.\n\nStack: Python, Java, Spring Boot, FastAPI, SQL e GCP.\nEstudando testes automatizados e segurança de software. Bacharelando em Sistemas de Informação (12/2026).`;
+
         const chatbotData = {
-            welcome: `Hello! I'm **Lucas Vinicius**'s virtual assistant.`,
+            welcome: 'Olá! Sou o assistente virtual do Lucas. Diga algo para iniciarmos a conversa.',
+            askName: 'Olá primeiro Informe seu nome:',
+            greetUser: (name) => `Olá ${name}, como posso te ajudar hoje?`,
             flows: [
                 {
-                    id: 'transition',
-                    label: '🔄 Transição de Dados para Dev',
-                    query: 'Como foi sua transição de Ciência de Dados para Software?',
-                    keywords: ['dado', 'dados', 'data', 'ciencia', 'transicao', 'migracao', 'trajetoria', 'carreira', 'historico', 'power bi'],
-                    response: `Iniciei meus estudos e graduação na área de **Ciência de Dados**, mas migrei completamente para o **desenvolvimento de software**.\n\nO principal diferencial é que **trouxe comigo todo o conhecimento relevante**:\n• Visão analítica para modelagem de banco de dados e arquitetura de dados;\n• Facilidade com pipelines de dados (ETL/ELT), scripts e automação de processos;\n• Domínio de métricas para suporte à tomada de decisões em projetos de software.`
+                    id: 'sobre',
+                    label: '🙋 Sobre mim',
+                    query: 'Fale sobre você',
+                    keywords: ['sobre', 'mim', 'voce', 'lucas', 'quem e', 'quem e voce', 'quem e o lucas', 'apresente', 'apresentacao', 'bio', 'experiencia', 'perfil', 'resumo', 'trajetoria'],
+                    response: sobreMimText
+                },
+                {
+                    id: 'idade',
+                    label: '🎂 Idade',
+                    query: 'Qual a sua idade?',
+                    keywords: ['idade', 'quantos anos', 'ano', 'anos', 'idade tem', 'data de nascimento', 'nasceu'],
+                    response: 'Tenho 25 anos.'
+                },
+                {
+                    id: 'formacao',
+                    label: '🎓 Formação',
+                    query: 'Qual a sua formação?',
+                    keywords: ['formacao', 'formado', 'graduacao', 'faculdade', 'sistemas de informacao', 'estudos', 'estudando', 'universidade', 'bacharelado', 'bacharel', 'curso'],
+                    response: 'Formação: Bacharelando em Sistemas de Informação (12/2026).'
                 },
                 {
                     id: 'stack',
-                    label: '🛠️ Tecnologias & Stack',
-                    query: 'Quais tecnologias você usa no dia a dia?',
-                    keywords: ['stack', 'tecnologia', 'tecnologias', 'ferramenta', 'ferramentas', 'python', 'java', 'spring', 'fastapi', 'selenium', 'django', 'gcp', 'aws', 'infra', 'nuvem', 'cloud'],
-                    response: `No meu dia a dia de trabalho, utilizo:\n\n• **Linguagens & Frameworks:** Python, Java, Spring Boot, FastAPI e Django\n• **Qualidade & Testes:** Selenium, testes unitários e automação de testes\n• **Bancos de Dados:** PostgreSQL, modelagem relacional, SQL e NoSQL\n• **Cloud & Infraestrutura:** Google Cloud Platform (GCP) e Amazon Web Services (AWS)\n• **Automação & Integração:** N8N, RPA, Web Scraping e pipelines de CI/CD.`
-                },
-                {
-                    id: 'problems',
-                    label: '🧩 Resolução de Problemas',
-                    query: 'Qual é a sua abordagem para resolver problemas complexos?',
-                    keywords: ['problema', 'problemas', 'complexo', 'complexos', 'negocio', 'impacto', 'business', 'solucao', 'valor', 'decisao'],
-                    response: `Gosto muito de **resolver problemas complexos que muitas vezes parecem simples, mas têm um impacto direto no negócio**.\n\n• Muitos gargalos técnicos ou vulnerabilidades parecem triviais, mas geram custos altos ou riscos operacionais se ignorados.\n• Minha abordagem une análise de requisitos de negócio, testes rigorosos e código limpo para construir soluções sustentáveis que geram valor real.`
-                },
-                {
-                    id: 'apis',
-                    label: '⚡ APIs, Testes & Automação',
-                    query: 'Qual sua experiência com desenvolvimento de APIs e automação?',
-                    keywords: ['api', 'apis', 'rest', 'backend', 'automacao', 'rpa', 'selenium', 'scraping', 'unitarios', 'banco', 'database'],
-                    response: `Tenho ampla experiência com:\n\n• **Desenvolvimento de APIs:** Criação de APIs REST robustas, rápidas e seguras com **FastAPI, Spring Boot e Django**;\n• **Qualidade & Testes Unitários:** Implementação de suítes de testes unitários para garantir regras estáveis;\n• **Bancos de Dados & Automação:** Gestão de bancos de dados relacionais e automação de processos com **Selenium** e RPA.`
+                    label: '🛠️ Stack & Tecnologias',
+                    query: 'Quais tecnologias você usa?',
+                    keywords: ['stack', 'tecnologia', 'tecnologias', 'ferramenta', 'ferramentas', 'python', 'java', 'spring', 'boot', 'fastapi', 'sql', 'gcp', 'bigquery'],
+                    response: 'Stack: Python, Java, Spring Boot, FastAPI, SQL e GCP.\nEstudando testes automatizados e segurança de software. Bacharelando em Sistemas de Informação (12/2026).'
                 },
                 {
                     id: 'contact',
-                    label: '💼 Contato & Parceria',
-                    query: 'Como podemos trabalhar juntos ou marcar uma conversa?',
+                    label: '💬 Contato',
+                    query: 'Como posso entrar em contato com você?',
                     keywords: ['contato', 'contratar', 'trabalhar', 'reuniao', 'email', 'whatsapp', 'linkedin', 'conversar', 'parceria', 'vaga'],
                     response: `Estou sempre aberto a novas oportunidades profissionais, vagas e projetos!\n\nEntre em contato direto:\n• 💬 **WhatsApp:** [Conversar no WhatsApp](https://wa.me/558296402650?text=Ol%C3%A1%20Lucas,%20vi%20seu%20portf%C3%B3lio!)\n• 📧 **E-mail:** [vinidev.eng@gmail.com](mailto:vinidev.eng@gmail.com)\n• 💼 **LinkedIn:** [Perfil no LinkedIn](https://linkedin.com/in/lucas-vinicius-ds)\n• Ou preencha o formulário na seção [Contatos](#contatos)!`
                 }
@@ -449,11 +456,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function formatMarkdown(text) {
             let escaped = escapeHTML(text);
-            // Links [title](url)
             escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:text-accent-hover font-medium">$1</a>');
-            // Bold **text**
             escaped = escaped.replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>');
-            // Bullets • text
             const lines = escaped.split('\n');
             const formatted = lines.map(line => {
                 if (line.startsWith('• ')) {
@@ -519,7 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.className = 'quick-reply-btn';
                 btn.innerHTML = `<span>${flow.label}</span>`;
                 btn.addEventListener('click', () => {
-                    handleUserQuestion(flow.query, flow.response);
+                    handleIncomingMessage(flow.query, flow.response, true);
                 });
                 quickRepliesContainer.appendChild(btn);
             });
@@ -532,8 +536,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 .replace(/[\u0300-\u036f]/g, '');
         }
 
+        function extractName(rawText) {
+            let clean = rawText.trim()
+                .replace(/^(ol[aá]|oi|opa|bom dia|boa tarde|boa noite)[,\.\s\!]*/i, '')
+                .replace(/^(me chamo|meu nome [eé]|sou o|sou a|eu sou o|eu sou a|sou|eu sou|chamo|me chame de)\s+/i, '')
+                .replace(/[,\.\!\?]+$/, '')
+                .trim();
+            if (!clean) clean = rawText.trim();
+            const words = clean.split(/\s+/).filter(Boolean);
+            if (words.length === 0) return 'Visitante';
+            return words.map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
+        }
+
+        function updatePlaceholder() {
+            if (chatState === 'START') {
+                chatInput.placeholder = 'Envie uma mensagem para iniciar...';
+            } else if (chatState === 'AWAITING_NAME') {
+                chatInput.placeholder = 'Informe seu nome aqui...';
+            } else {
+                chatInput.placeholder = 'Pergunte sobre mim, idade, formação, stack...';
+            }
+        }
+
         function findBestResponse(userText) {
             const normalizedQuery = normalizeText(userText);
+
+            const hasIdade = ['idade', 'quantos anos', 'anos'].some(k => normalizedQuery.includes(k));
+            const hasFormacao = ['formacao', 'graduacao', 'faculdade', 'curso', 'sistemas de informacao'].some(k => normalizedQuery.includes(k));
+            if (hasIdade && hasFormacao) {
+                return 'Tenho 25 anos e sou Bacharelando em Sistemas de Informação (12/2026).';
+            }
+
             let bestMatch = null;
             let highestScore = 0;
 
@@ -558,15 +591,52 @@ document.addEventListener('DOMContentLoaded', () => {
                 return bestMatch.response;
             }
 
-            return `Sou **Engenheiro de Software especializado em Software Security Testing / QA** e bacharel em Sistemas de Informação. Trabalho com **Python, Java, Spring Boot, FastAPI, Selenium, Django, bancos de dados e GCP/AWS**.\n\nGosto de resolver problemas complexos com impacto direto no negócio e trouxe toda a minha bagagem de Ciência de Dados para o desenvolvimento de software.\n\nSe quiser explorar detalhes específicos, clique nas perguntas frequentes abaixo ou pergunte sobre minha atuação em QA, stack, resolução de problemas ou formas de contato!`;
+            return sobreMimText;
         }
 
-        function handleUserQuestion(question, forcedResponse = null) {
-            appendMessage('user', question);
+        function handleIncomingMessage(text, forcedResponse = null, isQuickReply = false) {
+            appendMessage('user', text);
+
+            if (chatState === 'START') {
+                chatState = 'AWAITING_NAME';
+                updatePlaceholder();
+                if (isQuickReply) {
+                    pendingQuestion = { text, response: forcedResponse };
+                }
+                showTypingIndicator();
+                setTimeout(() => {
+                    removeTypingIndicator();
+                    appendMessage('bot', chatbotData.askName);
+                    chatInput.focus();
+                }, 380);
+                return;
+            }
+
+            if (chatState === 'AWAITING_NAME') {
+                userName = extractName(text);
+                chatState = 'READY';
+                updatePlaceholder();
+                showTypingIndicator();
+                setTimeout(() => {
+                    removeTypingIndicator();
+                    appendMessage('bot', chatbotData.greetUser(userName));
+
+                    if (pendingQuestion) {
+                        const nextQuery = pendingQuestion;
+                        pendingQuestion = null;
+                        showTypingIndicator();
+                        setTimeout(() => {
+                            removeTypingIndicator();
+                            const answer = nextQuery.response || findBestResponse(nextQuery.text);
+                            appendMessage('bot', answer);
+                        }, 500);
+                    }
+                }, 380);
+                return;
+            }
+
             showTypingIndicator();
-
-            const response = forcedResponse || findBestResponse(question);
-
+            const response = forcedResponse || findBestResponse(text);
             setTimeout(() => {
                 removeTypingIndicator();
                 appendMessage('bot', response);
@@ -578,18 +648,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const text = chatInput.value.trim();
             if (!text) return;
             chatInput.value = '';
-            handleUserQuestion(text);
+            handleIncomingMessage(text);
         });
 
-        if (resetBtn) {
-            resetBtn.addEventListener('click', () => {
-                chatMessages.innerHTML = '';
-                appendMessage('bot', chatbotData.welcome);
-            });
+        function resetChat() {
+            chatState = 'START';
+            userName = '';
+            pendingQuestion = null;
+            chatMessages.innerHTML = '';
+            updatePlaceholder();
+            appendMessage('bot', chatbotData.welcome);
         }
 
-        // Initialize chat
-        appendMessage('bot', chatbotData.welcome);
+        if (resetBtn) {
+            resetBtn.addEventListener('click', resetChat);
+        }
+
+        resetChat();
         renderQuickReplies();
     }
 

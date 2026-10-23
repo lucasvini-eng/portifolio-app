@@ -549,9 +549,9 @@ footer {
 }
 
 .quick-reply-btn:hover {
-    background: rgba(184, 110, 40, 0.16);
+    background: var(--color-accent-hover);
     border-color: var(--color-accent);
-    color: #ffffff;
+    color: var(--color-card-hover);
     transform: translateY(-1px);
 }
 
