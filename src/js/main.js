@@ -19,22 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "Uma página de destino de alto desempenho, otimizada para dispositivos móveis, do tipo “link na biografia”, com um chatbot de qualificação integrado e transferência automatizada de leads para o WhatsApp. Desenvolvida com padrões web padrão, Tailwind CSS e um backend em Node.js/Express.",
             tech: ["Html", "CSS", "Tailwind CSS", "JavaScript", "Node.js"],
             codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
-            demoUrl: "https://project-002-linkshorteningsystem-lss.streamlit.app/"
+            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
         {
             id: 2,
-            title: "Quote Monitor ($) API",
-            category: "backend",
-            status: "dev",
-            statusText: "Em Manutenção",
-            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações estratégicas",
-            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "FastAPI"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
-            demoUrl: "https://project-003-quotefinance-rpa-btxecz6b27dmwymtsnruyd.streamlit.app/"
-        },
-        {
-            id: 3,
-            title: "Dashboard Management (Power BI)",
+            title: "Gerenciador de Leads/Clientes",
             category: "software",
             status: "completed",
             statusText: "Completed ✅",
@@ -42,6 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ["Tailwind CSS", "JavaScript", "Power BI Embedded", "ETL", "Power Query"],
             codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
             demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
+        },
+        {
+            id: 3,
+            title: "Quote Monitor ($) API",
+            category: "backend",
+            status: "dev",
+            statusText: "Em Manutenção",
+            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações estratégicas",
+            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "FastAPI"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
+            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
         {
             id: 5,
