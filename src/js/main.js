@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             statusText: "Finalizado",
             desc: "Uma página de destino de alto desempenho, otimizada para dispositivos móveis, do tipo “link na biografia”, com um chatbot de qualificação integrado e transferência automatizada de leads para o WhatsApp. Desenvolvida com padrões web padrão, Tailwind CSS e um backend em Node.js/Express.",
             tech: ["Html", "CSS", "Tailwind CSS", "JavaScript", "Node.js"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-002-LinkShorteningSystem-LSS",
+            codeUrl: "https://github.com/lucasvini-eng/lvsbio-page",
             demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
         {
