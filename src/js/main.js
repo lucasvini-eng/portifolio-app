@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 2,
             title: "Gerenciador de Leads/Clientes",
             category: "software",
-            status: "completed",
-            statusText: "Completed ✅",
-            desc: "Orchestration of interactive analytical views integrated into a customized web interface, accelerating decisions based on operational metrics..",
-            tech: ["Tailwind CSS", "JavaScript", "Power BI Embedded", "ETL", "Power Query"],
-            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
-            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
+            status: "dev",
+            statusText: "Em Desenvolvimento",
+            desc: "a definir",
+            tech: ["Java, Spring Boot, PostgreSQL"],
+            codeUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao",
+            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
         {
             id: 3,
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
         {
-            id: 5,
+            id: 4,
             title: "Task Management API",
             category: "software",
             status: "completed",
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
         },
          {
-            id: 6,
+            id: 5,
             title: "Dashboard Management (Power BI)",
             category: "dados",
             status: "completed",
