@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             id: 1,
-            title: "LVS Bio - Link para bio de alta conversão",
+            title: "LVS Bio - Página de alta conversão",
             category: "frontend",
             status: "completed",
             statusText: "Finalizado",
-            desc: "Uma página de destino de alto desempenho, otimizada para dispositivos móveis, do tipo “link na biografia”, com um chatbot de qualificação integrado e transferência automatizada de leads para o WhatsApp. Desenvolvida com padrões web padrão, Tailwind CSS e um backend em Node.js/Express.",
+            desc: "Uma página de destino de alto desempenho, otimizada para dispositivos móveis, do tipo “link na biografia”, com um chatbot de qualificação integrado e transferência automatizada de leads para o WhatsApp.",
             tech: ["Html", "CSS", "Tailwind CSS", "JavaScript", "Node.js"],
             codeUrl: "https://github.com/lucasvini-eng/lvsbio-page",
-            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
+            demoUrl: "https://lvsbio-page.vercel.app/"
         },
         {
             id: 2,
