@@ -12,39 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             id: 1,
-            title: "LVS Bio - Página de alta conversão",
-            category: "frontend",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Uma página de destino de alto desempenho, otimizada para dispositivos móveis, do tipo “link na biografia”, com um chatbot de qualificação integrado e transferência automatizada de leads para o WhatsApp.",
-            tech: ["Html", "CSS", "Tailwind CSS", "JavaScript", "Node.js"],
-            codeUrl: "https://github.com/lucasvini-eng/lvsbio-page",
-            demoUrl: "https://lvsbio-page.vercel.app/"
-        },
-        {
-            id: 2,
-            title: "Gerenciador de Leads/Clientes",
-            category: "software",
-            status: "dev",
-            statusText: "Em Desenvolvimento",
-            desc: "a definir",
-            tech: ["Java, Spring Boot, PostgreSQL"],
-            codeUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao",
-            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
-        },
-        {
-            id: 3,
             title: "Quote Monitor ($) API",
             category: "backend",
             status: "dev",
             statusText: "Em Manutenção",
-            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações estratégicas",
+            desc: "Sistema de API e automação para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações das principais moedas e criptomoedas.",
             tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "FastAPI"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
+            codeUrl: "https://github.com/LucasVini-eng/Project-001-QuoteMonitor",
             demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
         {
-            id: 4,
+            id: 2,
             title: "Task Management API",
             category: "software",
             status: "completed",
@@ -55,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
         },
          {
-            id: 5,
+            id: 3,
             title: "Dashboard Management (Power BI)",
             category: "dados",
             status: "completed",
