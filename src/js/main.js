@@ -382,12 +382,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let userName = '';
         let pendingQuestion = null;
 
-        const sobreMimText = `Engenheiro de Software com 3 anos de experiência em dados e backend. Construo APIs, pipelines de dados (GCP/BigQuery) e automações que eliminam trabalho manual.\n\nNa Construtora R Pontes, modelei um Data Warehouse no BigQuery que reduziu em 70% o tempo de análise e manutenção. Como autônomo, criei um funil de vendas que cortou o atendimento de 30 para 10 minutos e captou 10x mais leads.\n\nStack: Python, Java, Spring Boot, FastAPI, SQL e GCP.\nEstudando testes automatizados e segurança de software. Bacharelando em Sistemas de Informação (12/2026).`;
+        const sobreMimText = `Lucas é um Engenheiro de Software com 3 anos de experiência em dados e backend. Construo APIs, pipelines de dados (GCP/BigQuery) e automações que eliminam trabalho manual.\n\nNa Construtora R Pontes, modelei um Data Warehouse no BigQuery que reduziu em 70% o tempo de análise e manutenção. Como autônomo, criei um funil de vendas que cortou o atendimento de 30 para 10 minutos e captou 10x mais leads.\n\nStack: Python, Java, Spring Boot, FastAPI, SQL e GCP.\nEstudando testes automatizados e segurança de software. Bacharelando em Sistemas de Informação (12/2026).`;
 
         const chatbotData = {
             welcome: 'Olá! Sou o assistente virtual do Lucas. Diga algo para iniciarmos a conversa.',
             askName: 'Olá primeiro Informe seu nome:',
-            greetUser: (name) => `Olá ${name}, como posso te ajudar hoje?`,
+            greetUser: (name) => `Olá ${name}, `,
             flows: [
                 {
                     id: 'sobre',
