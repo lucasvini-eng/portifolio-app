@@ -13,62 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             title: "Quote Monitor ($) API",
-<<<<<<< HEAD
-            category: "financeiro",
-            categoryLabel: "Financeiro",
-            status: "dev",
-            statusText: "Em Manutenção",
-            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações estratégicas e taxas de câmbio.",
-            tech: ["Python", "FastAPI", "Selenium", "Google Cloud", "Google Sheets API", "Streamlit"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA#arquitetura",
-            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
-        },
-        {
-            id: 2,
-            title: "Gestão Financeira & Cash Flow (Power BI)",
-            category: "financeiro",
-            categoryLabel: "Financeiro",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Orquestração de visões analíticas interativas de fluxo de caixa, DFC, EBITDA e projeções de receitas integradas à interface web para suporte a tomadas de decisão ágeis.",
-            tech: ["Power BI", "DAX", "Power Query", "SQL", "Tailwind CSS"],
-            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
-            systemDesignUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI#system-design",
-            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
-        },
-        {
-            id: 3,
-            title: "People Analytics & Portal RH",
-            category: "rh",
-            categoryLabel: "RH",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Painel inteligente e API de recursos humanos para acompanhamento de taxas de turnover, absenteísmo, controle de admissões e distribuição de headcount por setor.",
-            tech: ["Python", "FastAPI", "PostgreSQL", "Tailwind CSS", "JavaScript"],
-            codeUrl: "https://github.com/LucasVini-eng",
-            systemDesignUrl: "https://github.com/LucasVini-eng",
-            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
-        },
-        {
-            id: 4,
-            title: "Logistics Tracking & Supply Chain",
-            category: "logistica",
-            categoryLabel: "Logística",
-            status: "dev",
-            statusText: "Em Desenvolvimento",
-            desc: "Monitoramento em tempo real de fretes, roteirização de entregas, gestão de expedição e cálculo preditivo de SLA de entrega para redução de gargalos logísticos.",
-            tech: ["Python", "PostgreSQL", "Google Cloud", "REST API", "Docker"],
-            codeUrl: "https://github.com/LucasVini-eng",
-            systemDesignUrl: "https://github.com/LucasVini-eng",
-            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
-        },
-        {
-            id: 5,
-            title: "DRE & Conciliação Contábil Automatizada",
-            category: "contabilidade",
-            categoryLabel: "Contabilidade",
-=======
             category: "backend",
             status: "dev",
             statusText: "Em Manutenção",
@@ -88,11 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
             codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
             demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
         },
-         {
+        {
             id: 3,
             title: "Dashboard Management (Power BI)",
             category: "dados",
->>>>>>> 78e4002a0035206837e072e2cabe2920f01ce28d
             status: "completed",
             statusText: "Finalizado",
             desc: "Pipeline de ETL no BigQuery integrando lançamentos fiscais e contábeis, automação de conciliação bancária e geração de demonstrativos contábeis dinâmicos.",
