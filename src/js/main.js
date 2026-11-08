@@ -12,59 +12,108 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             id: 1,
-            title: "LVS Bio - Página de alta conversão",
-            category: "frontend",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Uma página de destino de alto desempenho, otimizada para dispositivos móveis, do tipo “link na biografia”, com um chatbot de qualificação integrado e transferência automatizada de leads para o WhatsApp.",
-            tech: ["Html", "CSS", "Tailwind CSS", "JavaScript", "Node.js"],
-            codeUrl: "https://github.com/lucasvini-eng/lvsbio-page",
-            demoUrl: "https://lvsbio-page.vercel.app/"
-        },
-        {
-            id: 2,
-            title: "Gerenciador de Leads/Clientes",
-            category: "software",
+            title: "Quote Monitor ($) API",
+            category: "financeiro",
+            categoryLabel: "Financeiro",
             status: "dev",
-            statusText: "Em Desenvolvimento",
-            desc: "a definir",
-            tech: ["Java, Spring Boot, PostgreSQL"],
-            codeUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao",
+            statusText: "Em Manutenção",
+            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações estratégicas e taxas de câmbio.",
+            tech: ["Python", "FastAPI", "Selenium", "Google Cloud", "Google Sheets API", "Streamlit"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
+            systemDesignUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA#arquitetura",
             demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
         {
+            id: 2,
+            title: "Gestão Financeira & Cash Flow (Power BI)",
+            category: "financeiro",
+            categoryLabel: "Financeiro",
+            status: "completed",
+            statusText: "Finalizado",
+            desc: "Orquestração de visões analíticas interativas de fluxo de caixa, DFC, EBITDA e projeções de receitas integradas à interface web para suporte a tomadas de decisão ágeis.",
+            tech: ["Power BI", "DAX", "Power Query", "SQL", "Tailwind CSS"],
+            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
+            systemDesignUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI#system-design",
+            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
+        },
+        {
             id: 3,
-            title: "Quote Monitor ($) API",
-            category: "backend",
-            status: "dev",
-            statusText: "Em Manutenção",
-            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações estratégicas",
-            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "FastAPI"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
+            title: "People Analytics & Portal RH",
+            category: "rh",
+            categoryLabel: "RH",
+            status: "completed",
+            statusText: "Finalizado",
+            desc: "Painel inteligente e API de recursos humanos para acompanhamento de taxas de turnover, absenteísmo, controle de admissões e distribuição de headcount por setor.",
+            tech: ["Python", "FastAPI", "PostgreSQL", "Tailwind CSS", "JavaScript"],
+            codeUrl: "https://github.com/LucasVini-eng",
+            systemDesignUrl: "https://github.com/LucasVini-eng",
             demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
         {
             id: 4,
-            title: "Task Management API",
-            category: "software",
-            status: "completed",
-            statusText: "Completed ✅",
-            desc: "The project that was developed is an API for managing tasks, using Java and the Spring Boot framework. First, users are registered and validated, and their passwords are encrypted in the H2 database. Then, tasks are created and assigned to their respective users; they can be updated and organized into lists.",
-            tech: ["Java", "Spring Boot", "API REST"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
-            demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
+            title: "Logistics Tracking & Supply Chain",
+            category: "logistica",
+            categoryLabel: "Logística",
+            status: "dev",
+            statusText: "Em Desenvolvimento",
+            desc: "Monitoramento em tempo real de fretes, roteirização de entregas, gestão de expedição e cálculo preditivo de SLA de entrega para redução de gargalos logísticos.",
+            tech: ["Python", "PostgreSQL", "Google Cloud", "REST API", "Docker"],
+            codeUrl: "https://github.com/LucasVini-eng",
+            systemDesignUrl: "https://github.com/LucasVini-eng",
+            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
         },
-         {
+        {
             id: 5,
-            title: "Dashboard Management (Power BI)",
-            category: "dados",
+            title: "DRE & Conciliação Contábil Automatizada",
+            category: "contabilidade",
+            categoryLabel: "Contabilidade",
             status: "completed",
-            statusText: "Completed ✅",
-            desc: "Orchestration of interactive analytical views integrated into a customized web interface, accelerating decisions based on operational metrics..",
-            tech: ["Tailwind CSS", "JavaScript", "Power BI Embedded", "ETL", "Power Query"],
+            statusText: "Finalizado",
+            desc: "Pipeline de ETL no BigQuery integrando lançamentos fiscais e contábeis, automação de conciliação bancária e geração de demonstrativos contábeis dinâmicos.",
+            tech: ["GCP BigQuery", "Python", "SQL", "Power BI Embedded"],
             codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
+            systemDesignUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI#system-design",
             demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
         },
+        {
+            id: 6,
+            title: "LVS Bio - Página de Alta Conversão",
+            category: "comercial",
+            categoryLabel: "Comercial",
+            status: "completed",
+            statusText: "Finalizado",
+            desc: "Landing page de alta conversão para o setor comercial, otimizada para tráfego pago, com qualificação automática e direcionamento direto de leads para o WhatsApp comercial.",
+            tech: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Node.js"],
+            codeUrl: "https://github.com/lucasvini-eng/lvsbio-page",
+            systemDesignUrl: "https://github.com/lucasvini-eng/lvsbio-page#system-design",
+            demoUrl: "https://lvsbio-page.vercel.app/"
+        },
+        {
+            id: 7,
+            title: "Gerenciador de Leads & CRM Comercial",
+            category: "comercial",
+            categoryLabel: "Comercial",
+            status: "dev",
+            statusText: "Em Desenvolvimento",
+            desc: "Sistema centralizado de gestão comercial com funil de vendas, acompanhamento de oportunidades, registro de interações com clientes e cálculo de conversão.",
+            tech: ["Java", "Spring Boot", "PostgreSQL", "Docker", "REST API"],
+            codeUrl: "https://github.com/LucasVini-eng",
+            systemDesignUrl: "https://github.com/LucasVini-eng",
+            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
+        },
+        {
+            id: 8,
+            title: "Task & Workflow Management API",
+            category: "administrativo",
+            categoryLabel: "Administrativo",
+            status: "completed",
+            statusText: "Finalizado",
+            desc: "API corporativa para gestão de tarefas, processos internos administrativos e controle de permissões por perfil (RBAC), com autenticação criptografada e histórico de ações.",
+            tech: ["Java", "Spring Boot", "Spring Security", "H2 Database", "API REST"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
+            systemDesignUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API#system-design",
+            demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
+        }
     ];
 
     const grid = document.getElementById('projects-grid');
@@ -78,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const q = searchQuery.toLowerCase();
             const matchesSearch = p.title.toLowerCase().includes(q) ||
                 p.desc.toLowerCase().includes(q) ||
+                p.categoryLabel.toLowerCase().includes(q) ||
                 p.tech.some(t => t.toLowerCase().includes(q));
             return matchesCategory && matchesSearch;
         });
@@ -85,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (filtered.length === 0) {
             grid.innerHTML = `
                 <div class="col-span-full text-center py-16">
-                    <p class="text-slate-400 text-lg mb-0">No projects were found matching the search terms.</p>
+                    <p class="text-slate-400 text-lg mb-0">Nenhum projeto encontrado para os critérios pesquisados.</p>
                 </div>
             `;
             return;
@@ -106,21 +156,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
             col.innerHTML = `
                 <div class="project-card h-full rounded-2xl p-6 flex flex-col">
-                    <div class="flex justify-between items-start mb-3">
+                    <div class="flex justify-between items-start gap-2 mb-3">
+                        <span class="font-mono text-xs font-semibold px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">
+                            ${p.categoryLabel}
+                        </span>
                         <span class="status-badge ${statusClass}">
                             <span class="status-dot"></span> ${p.statusText}
                         </span>
                     </div>
                     <h3 class="font-display text-lg font-bold text-white mb-2">${p.title}</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">${p.desc}</p>
-                    <div class="flex gap-2 mb-5">
+                    <div class="grid grid-cols-3 gap-2 mb-5">
                         <a href="${p.codeUrl}" target="_blank" rel="noopener noreferrer" title="Código fonte no GitHub"
-                           class="flex-1 inline-flex items-center justify-center gap-2 rounded-lg border border-white/10 text-white text-sm font-medium py-2.5 hover:border-accent hover:bg-accent/10 hover:text-accent transition-all">
-                            <i class="ph ph-github-logo"></i> Código
+                           class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-white/10 text-white text-xs font-medium py-2.5 px-2 hover:border-accent hover:bg-accent/10 hover:text-accent transition-all text-center">
+                            <i class="ph ph-github-logo text-base shrink-0"></i> <span class="truncate">Código</span>
                         </a>
-                        <a href="${p.demoUrl}" target="_blank" rel="noopener noreferrer" title="Visualizar Live Demo"
-                           class="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-accent border border-accent text-white hover:text-darker text-sm font-semibold py-2.5 hover:bg-accent-hover hover:border-accent-hover transition-all">
-                            <i class="ph ph-arrow-square-out"></i> Acessar
+                        <a href="${p.systemDesignUrl}" target="_blank" rel="noopener noreferrer" title="System Design"
+                           class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-white/10 text-white text-xs font-medium py-2.5 px-2 hover:border-accent hover:bg-accent/10 hover:text-accent transition-all text-center">
+                            <i class="ph ph-tree-structure text-base shrink-0"></i> <span class="truncate">System Design</span>
+                        </a>
+                        <a href="${p.demoUrl}" target="_blank" rel="noopener noreferrer" title="Acessar projeto"
+                           class="inline-flex items-center justify-center gap-1.5 rounded-lg bg-accent border border-accent text-white hover:text-darker text-xs font-semibold py-2.5 px-2 hover:bg-accent-hover hover:border-accent-hover transition-all text-center">
+                            <i class="ph ph-arrow-square-out text-base shrink-0"></i> <span class="truncate">Acessar</span>
                         </a>
                     </div>
                     <div class="flex flex-wrap gap-1.5 pt-4 border-t border-white/10 mt-auto">
@@ -157,22 +214,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
+        const roleRadios = contactForm.querySelectorAll('input[name="user_role"]');
+        const roleOptions = contactForm.querySelectorAll('.role-option');
+        const roleError = document.getElementById('role-error');
+        const messageInput = document.getElementById('message');
+
+        roleRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                roleOptions.forEach(opt => opt.classList.remove('active', 'is-invalid'));
+                if (roleError) roleError.classList.add('hidden');
+                const parentLabel = radio.closest('.role-option');
+                if (parentLabel) parentLabel.classList.add('active');
+
+                if (messageInput) {
+                    switch (radio.value) {
+                        case 'CEO':
+                            messageInput.placeholder = 'Descreva seu projeto, desafio de negócio ou parceria estratégica...';
+                            break;
+                        case 'Tech Recruiter':
+                            messageInput.placeholder = 'Descreva a oportunidade, empresa e requisitos da vaga...';
+                            break;
+                        case 'Desenvolvedor':
+                            messageInput.placeholder = 'Compartilhe uma ideia técnica, dúvida ou colaboração...';
+                            break;
+                        default:
+                            messageInput.placeholder = 'Descreva resumidamente o projeto ou a necessidade...';
+                            break;
+                    }
+                }
+            });
+        });
+
         contactForm.addEventListener('submit', async function (e) {
             e.preventDefault();
 
             const form = this;
             const nameInput = document.getElementById('name');
             const emailInput = document.getElementById('email');
-            const messageInput = document.getElementById('message');
             const submitBtn = form.querySelector('button[type="submit"]');
             const toast = document.getElementById('toast');
             const toastMessage = document.getElementById('toast-message');
             const toastIcon = toast ? toast.querySelector('.toast-icon') : null;
 
+            const roleSelected = form.querySelector('input[name="user_role"]:checked');
+            const isRoleValid = Boolean(roleSelected);
+
+            if (!isRoleValid) {
+                roleOptions.forEach(opt => opt.classList.add('is-invalid'));
+                if (roleError) roleError.classList.remove('hidden');
+            } else {
+                roleOptions.forEach(opt => opt.classList.remove('is-invalid'));
+                if (roleError) roleError.classList.add('hidden');
+            }
+
             const fields = [nameInput, emailInput, messageInput];
-            const isValid = form.checkValidity();
-            fields.forEach(el => el.classList.toggle('is-invalid', !el.checkValidity()));
-            if (!isValid) return;
+            const isFormValid = form.checkValidity() && isRoleValid;
+            fields.forEach(el => el && el.classList.toggle('is-invalid', !el.checkValidity()));
+            if (!isFormValid) return;
 
             const originalBtnHtml = submitBtn.innerHTML;
             submitBtn.disabled = true;
@@ -189,8 +287,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify({
                         name: nameInput.value,
                         email: emailInput.value,
+                        sou: roleSelected.value,
+                        perfil: roleSelected.value,
                         message: messageInput.value,
-                        _subject: `New contact from ${nameInput.value}`
+                        _subject: `[${roleSelected.value.toUpperCase()}] Novo contato de ${nameInput.value}`
                     })
                 });
 
@@ -198,11 +298,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 toast.classList.remove('error');
                 if (toastIcon) toastIcon.className = 'ph ph-check-circle toast-icon';
-                toastMessage.textContent = 'Message sent successfully!';
+                toastMessage.textContent = 'Mensagem enviada com sucesso! ✅';
                 toast.classList.add('show');
 
                 form.reset();
-                fields.forEach(el => el.classList.remove('is-invalid'));
+                fields.forEach(el => el && el.classList.remove('is-invalid'));
+                roleOptions.forEach(opt => opt.classList.remove('active', 'is-invalid'));
+                if (roleError) roleError.classList.add('hidden');
+                if (messageInput) {
+                    messageInput.placeholder = 'Descreva resumidamente o projeto ou a necessidade...';
+                }
 
             } catch (error) {
                 toast.classList.add('error');
@@ -228,7 +333,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sectionLabels = {
         home: '~/portfolio/home.js',
-        sobre: '~/portfolio/about-me.js',
         projetos: '~/portfolio/projects.js',
         contatos: '~/portfolio/contacts.js',
     };
@@ -390,285 +494,5 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (typeTarget) {
         typeTarget.textContent = 'SOFTWARE ENGINEER';
     }
-
-    function initAboutChatbot() {
-        const chatMessages = document.getElementById('chat-messages');
-        const chatForm = document.getElementById('chat-form');
-        const chatInput = document.getElementById('chat-input');
-        const quickRepliesContainer = document.getElementById('chat-quick-replies');
-        const resetBtn = document.getElementById('chat-reset-btn');
-
-        if (!chatMessages || !chatForm || !chatInput || !quickRepliesContainer) return;
-
-        let chatState = 'START';
-        let userName = '';
-        let pendingQuestion = null;
-
-        const sobreMimText = `Engenheiro de Software com 3 anos de experiência em dados e backend. Construo APIs, pipelines de dados (GCP/BigQuery) e automações que eliminam trabalho manual.\n\nNa Construtora R Pontes, modelei um Data Warehouse no BigQuery que reduziu em 70% o tempo de análise e manutenção. Como autônomo, criei um funil de vendas que cortou o atendimento de 30 para 10 minutos e captou 10x mais leads.\n\nStack: Python, Java, Spring Boot, FastAPI, SQL e GCP.\nEstudando testes automatizados e segurança de software. Bacharelando em Sistemas de Informação (12/2026).`;
-
-        const chatbotData = {
-            welcome: 'Olá! Sou o assistente virtual do Lucas. Diga algo para iniciarmos a conversa.',
-            askName: 'Olá primeiro Informe seu nome:',
-            greetUser: (name) => `Olá ${name}, como posso te ajudar hoje?`,
-            flows: [
-                {
-                    id: 'sobre',
-                    label: '🙋 Sobre mim',
-                    query: 'Fale sobre você',
-                    keywords: ['sobre', 'mim', 'voce', 'lucas', 'quem e', 'quem e voce', 'quem e o lucas', 'apresente', 'apresentacao', 'bio', 'experiencia', 'perfil', 'resumo', 'trajetoria'],
-                    response: sobreMimText
-                },
-                {
-                    id: 'idade',
-                    label: '🎂 Idade',
-                    query: 'Qual a sua idade?',
-                    keywords: ['idade', 'quantos anos', 'ano', 'anos', 'idade tem', 'data de nascimento', 'nasceu'],
-                    response: 'Tenho 25 anos.'
-                },
-                {
-                    id: 'formacao',
-                    label: '🎓 Formação',
-                    query: 'Qual a sua formação?',
-                    keywords: ['formacao', 'formado', 'graduacao', 'faculdade', 'sistemas de informacao', 'estudos', 'estudando', 'universidade', 'bacharelado', 'bacharel', 'curso'],
-                    response: 'Formação: Bacharelando em Sistemas de Informação (12/2026).'
-                },
-                {
-                    id: 'stack',
-                    label: '🛠️ Stack & Tecnologias',
-                    query: 'Quais tecnologias você usa?',
-                    keywords: ['stack', 'tecnologia', 'tecnologias', 'ferramenta', 'ferramentas', 'python', 'java', 'spring', 'boot', 'fastapi', 'sql', 'gcp', 'bigquery'],
-                    response: 'Stack: Python, Java, Spring Boot, FastAPI, SQL e GCP.\nEstudando testes automatizados e segurança de software. Bacharelando em Sistemas de Informação (12/2026).'
-                },
-                {
-                    id: 'contact',
-                    label: '💬 Contato',
-                    query: 'Como posso entrar em contato com você?',
-                    keywords: ['contato', 'contratar', 'trabalhar', 'reuniao', 'email', 'whatsapp', 'linkedin', 'conversar', 'parceria', 'vaga'],
-                    response: `Estou sempre aberto a novas oportunidades profissionais, vagas e projetos!\n\nEntre em contato direto:\n• 💬 **WhatsApp:** [Conversar no WhatsApp](https://wa.me/558296402650?text=Ol%C3%A1%20Lucas,%20vi%20seu%20portf%C3%B3lio!)\n• 📧 **E-mail:** [vinidev.eng@gmail.com](mailto:vinidev.eng@gmail.com)\n• 💼 **LinkedIn:** [Perfil no LinkedIn](https://linkedin.com/in/lucas-vinicius-ds)\n• Ou preencha o formulário na seção [Contatos](#contatos)!`
-                }
-            ]
-        };
-
-        function escapeHTML(str) {
-            const div = document.createElement('div');
-            div.textContent = str;
-            return div.innerHTML;
-        }
-
-        function formatMarkdown(text) {
-            let escaped = escapeHTML(text);
-            escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:text-accent-hover font-medium">$1</a>');
-            escaped = escaped.replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>');
-            const lines = escaped.split('\n');
-            const formatted = lines.map(line => {
-                if (line.startsWith('• ')) {
-                    return `<div class="flex items-start gap-2 ml-1 my-0.5"><span class="text-accent">•</span><span>${line.substring(2)}</span></div>`;
-                }
-                return line;
-            }).join('<br>');
-            return formatted;
-        }
-
-        function appendMessage(role, text) {
-            const wrapper = document.createElement('div');
-            if (role === 'user') {
-                wrapper.className = 'flex justify-end animate-slide-up';
-                wrapper.innerHTML = `
-                    <div class="chat-bubble-user p-3.5 max-w-[85%] text-sm font-medium leading-relaxed shadow-sm">
-                        ${escapeHTML(text)}
-                    </div>
-                `;
-            } else {
-                wrapper.className = 'flex items-start gap-3 animate-slide-up';
-                wrapper.innerHTML = `
-                    <div class="w-7 h-7 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-mono text-xs font-bold shrink-0 mt-0.5">
-                        LV
-                    </div>
-                    <div class="chat-bubble-bot p-4 max-w-[88%] text-sm leading-relaxed space-y-1 shadow-sm">
-                        ${formatMarkdown(text)}
-                    </div>
-                `;
-            }
-            chatMessages.appendChild(wrapper);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-
-        function showTypingIndicator() {
-            const indicator = document.createElement('div');
-            indicator.id = 'chat-typing-indicator';
-            indicator.className = 'flex items-start gap-3';
-            indicator.innerHTML = `
-                <div class="w-7 h-7 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-mono text-xs font-bold shrink-0 mt-0.5">
-                    LV
-                </div>
-                <div class="chat-bubble-bot px-4 py-3 text-sm flex items-center gap-1.5">
-                    <div class="typing-dot"></div>
-                    <div class="typing-dot"></div>
-                    <div class="typing-dot"></div>
-                </div>
-            `;
-            chatMessages.appendChild(indicator);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-
-        function removeTypingIndicator() {
-            const indicator = document.getElementById('chat-typing-indicator');
-            if (indicator) indicator.remove();
-        }
-
-        function renderQuickReplies() {
-            quickRepliesContainer.innerHTML = '';
-            chatbotData.flows.forEach(flow => {
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.className = 'quick-reply-btn';
-                btn.innerHTML = `<span>${flow.label}</span>`;
-                btn.addEventListener('click', () => {
-                    handleIncomingMessage(flow.query, flow.response, true);
-                });
-                quickRepliesContainer.appendChild(btn);
-            });
-        }
-
-        function normalizeText(str) {
-            return str
-                .toLowerCase()
-                .normalize('NFD')
-                .replace(/[\u0300-\u036f]/g, '');
-        }
-
-        function extractName(rawText) {
-            let clean = rawText.trim()
-                .replace(/^(ol[aá]|oi|opa|bom dia|boa tarde|boa noite)[,\.\s\!]*/i, '')
-                .replace(/^(me chamo|meu nome [eé]|sou o|sou a|eu sou o|eu sou a|sou|eu sou|chamo|me chame de)\s+/i, '')
-                .replace(/[,\.\!\?]+$/, '')
-                .trim();
-            if (!clean) clean = rawText.trim();
-            const words = clean.split(/\s+/).filter(Boolean);
-            if (words.length === 0) return 'Visitante';
-            return words.map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
-        }
-
-        function updatePlaceholder() {
-            if (chatState === 'START') {
-                chatInput.placeholder = 'Envie uma mensagem para iniciar...';
-            } else if (chatState === 'AWAITING_NAME') {
-                chatInput.placeholder = 'Informe seu nome aqui...';
-            } else {
-                chatInput.placeholder = 'Pergunte sobre mim, idade, formação, stack...';
-            }
-        }
-
-        function findBestResponse(userText) {
-            const normalizedQuery = normalizeText(userText);
-
-            const hasIdade = ['idade', 'quantos anos', 'anos'].some(k => normalizedQuery.includes(k));
-            const hasFormacao = ['formacao', 'graduacao', 'faculdade', 'curso', 'sistemas de informacao'].some(k => normalizedQuery.includes(k));
-            if (hasIdade && hasFormacao) {
-                return 'Tenho 25 anos e sou Bacharelando em Sistemas de Informação (12/2026).';
-            }
-
-            let bestMatch = null;
-            let highestScore = 0;
-
-            chatbotData.flows.forEach(flow => {
-                let score = 0;
-                flow.keywords.forEach(kw => {
-                    const normKw = normalizeText(kw);
-                    if (normalizedQuery.includes(normKw)) {
-                        score += 2;
-                    }
-                });
-                if (normalizedQuery.includes(normalizeText(flow.query))) {
-                    score += 5;
-                }
-                if (score > highestScore) {
-                    highestScore = score;
-                    bestMatch = flow;
-                }
-            });
-
-            if (bestMatch && highestScore > 0) {
-                return bestMatch.response;
-            }
-
-            return sobreMimText;
-        }
-
-        function handleIncomingMessage(text, forcedResponse = null, isQuickReply = false) {
-            appendMessage('user', text);
-
-            if (chatState === 'START') {
-                chatState = 'AWAITING_NAME';
-                updatePlaceholder();
-                if (isQuickReply) {
-                    pendingQuestion = { text, response: forcedResponse };
-                }
-                showTypingIndicator();
-                setTimeout(() => {
-                    removeTypingIndicator();
-                    appendMessage('bot', chatbotData.askName);
-                    chatInput.focus();
-                }, 380);
-                return;
-            }
-
-            if (chatState === 'AWAITING_NAME') {
-                userName = extractName(text);
-                chatState = 'READY';
-                updatePlaceholder();
-                showTypingIndicator();
-                setTimeout(() => {
-                    removeTypingIndicator();
-                    appendMessage('bot', chatbotData.greetUser(userName));
-
-                    if (pendingQuestion) {
-                        const nextQuery = pendingQuestion;
-                        pendingQuestion = null;
-                        showTypingIndicator();
-                        setTimeout(() => {
-                            removeTypingIndicator();
-                            const answer = nextQuery.response || findBestResponse(nextQuery.text);
-                            appendMessage('bot', answer);
-                        }, 500);
-                    }
-                }, 380);
-                return;
-            }
-
-            showTypingIndicator();
-            const response = forcedResponse || findBestResponse(text);
-            setTimeout(() => {
-                removeTypingIndicator();
-                appendMessage('bot', response);
-            }, 380);
-        }
-
-        chatForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const text = chatInput.value.trim();
-            if (!text) return;
-            chatInput.value = '';
-            handleIncomingMessage(text);
-        });
-
-        function resetChat() {
-            chatState = 'START';
-            userName = '';
-            pendingQuestion = null;
-            chatMessages.innerHTML = '';
-            updatePlaceholder();
-            appendMessage('bot', chatbotData.welcome);
-        }
-
-        if (resetBtn) {
-            resetBtn.addEventListener('click', resetChat);
-        }
-
-        resetChat();
-        renderQuickReplies();
-    }
-
-    initAboutChatbot();
 });
 
