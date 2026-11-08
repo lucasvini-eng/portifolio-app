@@ -13,29 +13,60 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             title: "Quote Monitor ($) API",
-            category: "backend",
-            status: "dev",
-            statusText: "Em Manutenção",
-            desc: "Sistema de API e automação para o monitoramento contínuo de cotações de mercado, automatizando a coleta, o processamento e a divulgação de informações das principais moedas e criptomoedas.",
-            tech: ["Python", "Selenium", "Google Cloud", "Google Sheets API", "Web Scraping", "Streamlit", "Data Egineering", "FastAPI"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-001-QuoteMonitor",
-            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
+            category: "financeiro",
+            categoryLabel: "Financeiro",
+            status: "completed",
+            statusText: "Finalizado",
+            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, processamento de taxas de câmbio e índices econômicos.",
+            tech: ["Python", "FastAPI", "Selenium", "Google Cloud", "Google Sheets API", "Streamlit"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
+            systemDesignUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA#arquitetura",
+            demoUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA#readme"
         },
         {
             id: 2,
-            title: "Task Management API",
-            category: "software",
+            title: "Gestão Financeira & Cash Flow (Power BI)",
+            category: "financeiro",
+            categoryLabel: "Financeiro",
             status: "completed",
-            statusText: "Completed ✅",
-            desc: "The project that was developed is an API for managing tasks, using Java and the Spring Boot framework. First, users are registered and validated, and their passwords are encrypted in the H2 database. Then, tasks are created and assigned to their respective users; they can be updated and organized into lists.",
-            tech: ["Java", "Spring Boot", "API REST"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
-            demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
+            statusText: "Finalizado",
+            desc: "Orquestração de visões analíticas interativas de fluxo de caixa, DFC, EBITDA e projeções de receitas integradas à interface web para suporte a tomadas de decisão ágeis.",
+            tech: ["Power BI", "DAX", "Power Query", "SQL", "Tailwind CSS"],
+            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
+            systemDesignUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI#system-design",
+            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
         },
         {
             id: 3,
-            title: "Dashboard Management (Power BI)",
-            category: "dados",
+            title: "People Analytics & Portal RH",
+            category: "rh",
+            categoryLabel: "RH",
+            status: "completed",
+            statusText: "Finalizado",
+            desc: "Painel inteligente e API de recursos humanos para acompanhamento de taxas de turnover, absenteísmo, controle de admissões e distribuição de headcount por setor.",
+            tech: ["Python", "FastAPI", "PostgreSQL", "Tailwind CSS", "JavaScript"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-004-HR-PeopleAnalytics",
+            systemDesignUrl: "https://github.com/LucasVini-eng/Project-004-HR-PeopleAnalytics#system-design",
+            demoUrl: "https://github.com/LucasVini-eng/Project-004-HR-PeopleAnalytics#demo"
+        },
+        {
+            id: 4,
+            title: "Logistics Tracking & Supply Chain",
+            category: "logistica",
+            categoryLabel: "Logística",
+            status: "dev",
+            statusText: "Em Desenvolvimento",
+            desc: "Monitoramento em tempo real de fretes, roteirização de entregas, gestão de expedição e cálculo preditivo de SLA de entrega para redução de gargalos logísticos.",
+            tech: ["Python", "PostgreSQL", "Google Cloud", "REST API", "Docker"],
+            codeUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain",
+            systemDesignUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain#system-design",
+            demoUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain#demo"
+        },
+        {
+            id: 5,
+            title: "DRE & Conciliação Contábil Automatizada",
+            category: "contabilidade",
+            categoryLabel: "Contabilidade",
             status: "completed",
             statusText: "Finalizado",
             desc: "Pipeline de ETL no BigQuery integrando lançamentos fiscais e contábeis, automação de conciliação bancária e geração de demonstrativos contábeis dinâmicos.",
@@ -53,9 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
             statusText: "Finalizado",
             desc: "Landing page de alta conversão para o setor comercial, otimizada para tráfego pago, com qualificação automática e direcionamento direto de leads para o WhatsApp comercial.",
             tech: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Node.js"],
-            codeUrl: "https://github.com/lucasvini-eng/lvsbio-page",
-            systemDesignUrl: "https://github.com/lucasvini-eng/lvsbio-page#system-design",
-            demoUrl: "https://lvsbio-page.vercel.app/"
+            codeUrl: "https://github.com/LucasVini-eng/lvsbio-page",
+            systemDesignUrl: "https://github.com/LucasVini-eng/lvsbio-page#system-design",
+            demoUrl: "https://lucasvini-eng.github.io/lvsbio-page/"
         },
         {
             id: 7,
@@ -66,9 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
             statusText: "Em Desenvolvimento",
             desc: "Sistema centralizado de gestão comercial com funil de vendas, acompanhamento de oportunidades, registro de interações com clientes e cálculo de conversão.",
             tech: ["Java", "Spring Boot", "PostgreSQL", "Docker", "REST API"],
-            codeUrl: "https://github.com/LucasVini-eng",
-            systemDesignUrl: "https://github.com/LucasVini-eng",
-            demoUrl: "https://sites.google.com/view/emmanuteno-quote-monitor/em-manutencao"
+            codeUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager",
+            systemDesignUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager#system-design",
+            demoUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager#demo"
         },
         {
             id: 8,
@@ -81,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: ["Java", "Spring Boot", "Spring Security", "H2 Database", "API REST"],
             codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
             systemDesignUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API#system-design",
-            demoUrl: "https://www.linkedin.com/posts/lucas-vinicius-ds_projeto-gerenciamento-de-tarefas-por-api-ugcPost-7398842285439758336-AbWo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQ9xY4Bq9hbYyIilymoH1vo69oq8gsEDaE"
+            demoUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API#demo"
         }
     ];
 
@@ -91,13 +122,15 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderProjects(filterValue = 'all', searchQuery = '') {
         if (!grid) return;
         grid.innerHTML = '';
+        const q = (searchQuery || '').toLowerCase().trim();
         const filtered = projects.filter(p => {
             const matchesCategory = filterValue === 'all' || p.category === filterValue;
-            const q = searchQuery.toLowerCase();
-            const matchesSearch = p.title.toLowerCase().includes(q) ||
-                p.desc.toLowerCase().includes(q) ||
-                p.categoryLabel.toLowerCase().includes(q) ||
-                p.tech.some(t => t.toLowerCase().includes(q));
+            if (!q) return matchesCategory;
+            const categoryText = (p.categoryLabel || p.category || '').toLowerCase();
+            const matchesSearch = (p.title && p.title.toLowerCase().includes(q)) ||
+                (p.desc && p.desc.toLowerCase().includes(q)) ||
+                categoryText.includes(q) ||
+                (Array.isArray(p.tech) && p.tech.some(t => t.toLowerCase().includes(q)));
             return matchesCategory && matchesSearch;
         });
 
@@ -119,15 +152,19 @@ document.addEventListener('DOMContentLoaded', () => {
             if (p.status === 'producao') statusClass = 'status-producao';
             if (p.status === 'dev') statusClass = 'status-dev';
 
-            const techSpans = p.tech.map(t =>
+            const techSpans = (p.tech || []).map(t =>
                 `<span class="font-mono text-xs bg-white/5 text-slate-300 px-2 py-1 rounded-md">${t}</span>`
             ).join('');
+
+            const codeHref = p.codeUrl || 'https://github.com/LucasVini-eng';
+            const designHref = p.systemDesignUrl || p.codeUrl || 'https://github.com/LucasVini-eng';
+            const demoHref = p.demoUrl || p.codeUrl || 'https://github.com/LucasVini-eng';
 
             col.innerHTML = `
                 <div class="project-card h-full rounded-2xl p-6 flex flex-col">
                     <div class="flex justify-between items-start gap-2 mb-3">
                         <span class="font-mono text-xs font-semibold px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">
-                            ${p.categoryLabel}
+                            ${p.categoryLabel || 'Projeto'}
                         </span>
                         <span class="status-badge ${statusClass}">
                             <span class="status-dot"></span> ${p.statusText}
@@ -136,15 +173,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h3 class="font-display text-lg font-bold text-white mb-2">${p.title}</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">${p.desc}</p>
                     <div class="grid grid-cols-3 gap-2 mb-5">
-                        <a href="${p.codeUrl}" target="_blank" rel="noopener noreferrer" title="Código fonte no GitHub"
+                        <a href="${codeHref}" target="_blank" rel="noopener noreferrer" title="Código fonte no GitHub"
                            class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-white/10 text-white text-xs font-medium py-2.5 px-2 hover:border-accent hover:bg-accent/10 hover:text-accent transition-all text-center">
                             <i class="ph ph-github-logo text-base shrink-0"></i> <span class="truncate">Código</span>
                         </a>
-                        <a href="${p.systemDesignUrl}" target="_blank" rel="noopener noreferrer" title="System Design"
+                        <a href="${designHref}" target="_blank" rel="noopener noreferrer" title="System Design da Solução"
                            class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-white/10 text-white text-xs font-medium py-2.5 px-2 hover:border-accent hover:bg-accent/10 hover:text-accent transition-all text-center">
                             <i class="ph ph-tree-structure text-base shrink-0"></i> <span class="truncate">System Design</span>
                         </a>
-                        <a href="${p.demoUrl}" target="_blank" rel="noopener noreferrer" title="Acessar projeto"
+                        <a href="${demoHref}" target="_blank" rel="noopener noreferrer" title="Acessar projeto / Live Demo"
                            class="inline-flex items-center justify-center gap-1.5 rounded-lg bg-accent border border-accent text-white hover:text-darker text-xs font-semibold py-2.5 px-2 hover:bg-accent-hover hover:border-accent-hover transition-all text-center">
                             <i class="ph ph-arrow-square-out text-base shrink-0"></i> <span class="truncate">Acessar</span>
                         </a>
