@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
             statusText: "Finalizado",
             desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, processamento de taxas de câmbio e índices econômicos.",
             tech: ["Python", "FastAPI", "Selenium", "Google Cloud", "Google Sheets API", "Streamlit"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA#arquitetura",
-            demoUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA#readme"
+            codeUrl: "https://github.com/lucasvini-eng/Project-01-QuoteMonitorAPI",
+            systemDesignUrl: "https://systemdesignquoteapi.vercel.app/",
+            demoUrl: "https://systemdesignquoteapi.vercel.app/"
         }
     ];
 
