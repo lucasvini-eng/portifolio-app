@@ -22,6 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
             codeUrl: "https://github.com/lucasvini-eng/Project-01-QuoteMonitorAPI",
             systemDesignUrl: "https://systemdesignquoteapi.vercel.app/",
             demoUrl: "https://systemdesignquoteapi.vercel.app/"
+        },
+        {
+            id: 2,
+            title: "Absence Management - HR",
+            category: "rh",
+            categoryLabel: "RH",
+            status: "dev",
+            statusText: "Em desenvolvimento",
+            desc: "Em Planejamento",
+            tech: ["Em definição"],
+            codeUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            systemDesignUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            demoUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/"
         }
     ];
 
