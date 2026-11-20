@@ -19,100 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
             statusText: "Finalizado",
             desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, processamento de taxas de câmbio e índices econômicos.",
             tech: ["Python", "FastAPI", "Selenium", "Google Cloud", "Google Sheets API", "Streamlit"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA#arquitetura",
-            demoUrl: "https://github.com/LucasVini-eng/Project-003-quoteFinance-RPA#readme"
+            codeUrl: "https://github.com/lucasvini-eng/Project-01-QuoteMonitorAPI",
+            systemDesignUrl: "https://systemdesignquoteapi.vercel.app/",
+            demoUrl: "https://systemdesignquoteapi.vercel.app/"
         },
         {
             id: 2,
-            title: "Gestão Financeira & Cash Flow (Power BI)",
-            category: "financeiro",
-            categoryLabel: "Financeiro",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Orquestração de visões analíticas interativas de fluxo de caixa, DFC, EBITDA e projeções de receitas integradas à interface web para suporte a tomadas de decisão ágeis.",
-            tech: ["Power BI", "DAX", "Power Query", "SQL", "Tailwind CSS"],
-            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
-            systemDesignUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI#system-design",
-            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
-        },
-        {
-            id: 3,
-            title: "People Analytics & Portal RH",
+            title: "Employee Management System",
             category: "rh",
             categoryLabel: "RH",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Painel inteligente e API de recursos humanos para acompanhamento de taxas de turnover, absenteísmo, controle de admissões e distribuição de headcount por setor.",
-            tech: ["Python", "FastAPI", "PostgreSQL", "Tailwind CSS", "JavaScript"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-004-HR-PeopleAnalytics",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-004-HR-PeopleAnalytics#system-design",
-            demoUrl: "https://github.com/LucasVini-eng/Project-004-HR-PeopleAnalytics#demo"
-        },
-        {
-            id: 4,
-            title: "Logistics Tracking & Supply Chain",
-            category: "logistica",
-            categoryLabel: "Logística",
             status: "dev",
             statusText: "Em Desenvolvimento",
-            desc: "Monitoramento em tempo real de fretes, roteirização de entregas, gestão de expedição e cálculo preditivo de SLA de entrega para redução de gargalos logísticos.",
-            tech: ["Python", "PostgreSQL", "Google Cloud", "REST API", "Docker"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain#system-design",
-            demoUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain#demo"
-        },
-        {
-            id: 5,
-            title: "DRE & Conciliação Contábil Automatizada",
-            category: "contabilidade",
-            categoryLabel: "Contabilidade",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Pipeline de ETL no BigQuery integrando lançamentos fiscais e contábeis, automação de conciliação bancária e geração de demonstrativos contábeis dinâmicos.",
-            tech: ["GCP BigQuery", "Python", "SQL", "Power BI Embedded"],
-            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
-            systemDesignUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI#system-design",
-            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
-        },
-        {
-            id: 6,
-            title: "LVS Bio - Página de Alta Conversão",
-            category: "comercial",
-            categoryLabel: "Comercial",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Landing page de alta conversão para o setor comercial, otimizada para tráfego pago, com qualificação automática e direcionamento direto de leads para o WhatsApp comercial.",
-            tech: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Node.js"],
-            codeUrl: "https://github.com/LucasVini-eng/lvsbio-page",
-            systemDesignUrl: "https://github.com/LucasVini-eng/lvsbio-page#system-design",
-            demoUrl: "https://lucasvini-eng.github.io/lvsbio-page/"
-        },
-        {
-            id: 7,
-            title: "Gerenciador de Leads & CRM Comercial",
-            category: "comercial",
-            categoryLabel: "Comercial",
-            status: "dev",
-            statusText: "Em Desenvolvimento",
-            desc: "Sistema centralizado de gestão comercial com funil de vendas, acompanhamento de oportunidades, registro de interações com clientes e cálculo de conversão.",
-            tech: ["Java", "Spring Boot", "PostgreSQL", "Docker", "REST API"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager#system-design",
-            demoUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager#demo"
-        },
-        {
-            id: 8,
-            title: "Task & Workflow Management API",
-            category: "administrativo",
-            categoryLabel: "Administrativo",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "API corporativa para gestão de tarefas, processos internos administrativos e controle de permissões por perfil (RBAC), com autenticação criptografada e histórico de ações.",
-            tech: ["Java", "Spring Boot", "Spring Security", "H2 Database", "API REST"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API#system-design",
-            demoUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API#demo"
+            desc: "Em planejamento.",
+            tech: ["Angular", "Java", "Spring Boot", "PostgreSQL"],
+            codeUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            systemDesignUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            demoUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/"
         }
     ];
 
@@ -124,7 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.innerHTML = '';
         const q = (searchQuery || '').toLowerCase().trim();
         const filtered = projects.filter(p => {
-            const matchesCategory = filterValue === 'all' || p.category === filterValue;
+            const matchesCategory = filterValue === 'all' ||
+                p.category === filterValue ||
+                (Array.isArray(p.categories) && p.categories.includes(filterValue));
             if (!q) return matchesCategory;
             const categoryText = (p.categoryLabel || p.category || '').toLowerCase();
             const matchesSearch = (p.title && p.title.toLowerCase().includes(q)) ||
