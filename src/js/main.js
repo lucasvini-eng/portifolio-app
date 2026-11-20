@@ -25,81 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 2,
-            title: "Gestão Financeira & Cash Flow (Power BI)",
-            category: "financeiro",
-            categoryLabel: "Financeiro",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Orquestração de visões analíticas interativas de fluxo de caixa, DFC, EBITDA e projeções de receitas integradas à interface web para suporte a tomadas de decisão ágeis.",
-            tech: ["Power BI", "DAX", "Power Query", "SQL", "Tailwind CSS"],
-            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
-            systemDesignUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI#system-design",
-            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
-        },
-        {
-            id: 3,
-            title: "People Analytics & Portal RH",
+            title: "Employee Management System",
             category: "rh",
             categoryLabel: "RH",
             status: "dev",
-            statusText: "Em Desenvolvimento",
-            desc: "Monitoramento em tempo real de fretes, roteirização de entregas, gestão de expedição e cálculo preditivo de SLA de entrega para redução de gargalos logísticos.",
-            tech: ["Python", "PostgreSQL", "Google Cloud", "REST API", "Docker"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain#system-design",
-            demoUrl: "https://github.com/LucasVini-eng/Project-006-Logistics-SupplyChain#demo"
-        },
-        {
-            id: 5,
-            title: "DRE & Conciliação Contábil Automatizada",
-            category: "contabilidade",
-            categoryLabel: "Contabilidade",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Pipeline de ETL no BigQuery integrando lançamentos fiscais e contábeis, automação de conciliação bancária e geração de demonstrativos contábeis dinâmicos.",
-            tech: ["GCP BigQuery", "Python", "SQL", "Power BI Embedded"],
-            codeUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI",
-            systemDesignUrl: "https://github.com/LucasVini-eng/lveProject-001-DashboardManager-PowerBI#system-design",
-            demoUrl: "https://lucasvini-eng.github.io/Project-001-DashboardManager-PowerBI/"
-        },
-        {
-            id: 6,
-            title: "LVS Bio - Página de Alta Conversão",
-            category: "comercial",
-            categoryLabel: "Comercial",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Landing page de alta conversão para o setor comercial, otimizada para tráfego pago, com qualificação automática e direcionamento direto de leads para o WhatsApp comercial.",
-            tech: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Node.js"],
-            codeUrl: "https://github.com/LucasVini-eng/lvsbio-page",
-            systemDesignUrl: "https://github.com/LucasVini-eng/lvsbio-page#system-design",
-            demoUrl: "https://lucasvini-eng.github.io/lvsbio-page/"
-        },
-        {
-            id: 7,
-            title: "Gerenciador de Leads & CRM Comercial",
-            category: "comercial",
-            categoryLabel: "Comercial",
-            status: "dev",
-            statusText: "Em Desenvolvimento",
-            desc: "Sistema centralizado de gestão comercial com funil de vendas, acompanhamento de oportunidades, registro de interações com clientes e cálculo de conversão.",
-            tech: ["Java", "Spring Boot", "PostgreSQL", "Docker", "REST API"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager#system-design",
-            demoUrl: "https://github.com/LucasVini-eng/Project-002-CRM-LeadsManager#demo"
-        },
-        {
-            id: 8,
-            title: "Task & Workflow Management API",
-            category: "administrativo",
-            categoryLabel: "Administrativo",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "API corporativa para gestão de tarefas, processos internos administrativos e controle de permissões por perfil (RBAC), com autenticação criptografada e histórico de ações.",
-            tech: ["Java", "Spring Boot", "Spring Security", "H2 Database", "API REST"],
-            codeUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API",
-            systemDesignUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API#system-design",
-            demoUrl: "https://github.com/LucasVini-eng/Project-005-TaskList-API#demo"
+            statusText: "Em Planejamento",
+            desc: "Etapa de planejamento",
+            tech: ["Angular", "Java", "Spring Boot", "PostgreSQL"],
+            codeUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            systemDesignUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            demoUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/"
         }
     ];
 
