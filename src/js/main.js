@@ -12,19 +12,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             id: 1,
-            title: "Quote Monitor ($) API",
+            title: "Payments and Expenses Management - PEM LVS",
             category: "financeiro",
             categoryLabel: "Financeiro",
-            status: "completed",
-            statusText: "Finalizado",
-            desc: "Automação Robótica de Processos (RPA) para o monitoramento contínuo de cotações de mercado, automatizando a coleta, processamento de taxas de câmbio e índices econômicos.",
-            tech: ["Python", "FastAPI", "Selenium", "Google Cloud", "Google Sheets API", "Streamlit"],
-            codeUrl: "https://github.com/lucasvini-eng/Project-01-QuoteMonitorAPI",
-            systemDesignUrl: "https://systemdesignquoteapi.vercel.app/",
-            demoUrl: "https://systemdesignquoteapi.vercel.app/"
+            status: "dev",
+            statusText: "Em Desenvolvimento",
+            desc: "Sistema web desenvolvido para auxiliar microempreendedores individuais (MEIs) e pequenas empresas no controle e gerenciamento de suas despesas.",
+            tech: ["Angular", "Java", "Spring Boot", "PostgreSQL", "Typescript", "Docker"],
+            codeUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            systemDesignUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            demoUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/"
         },
         {
             id: 2,
+            title: "Financial Management Dashboard - FMD LVS",
+            category: "financeiro",
+            categoryLabel: "Financeiro",
+            status: "dev",
+            statusText: "Em Desenvolvimento",
+            desc: "Em defeinição",
+            tech: ["em definição"],
+            codeUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            systemDesignUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/",
+            demoUrl: "https://lucasvini-eng.github.io/aviso-caos-no.c-digo/"
+        },
+        {
+            id: 3,
             title: "Employee Management System",
             category: "rh",
             categoryLabel: "RH",
