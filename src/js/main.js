@@ -403,8 +403,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeTarget && !prefersReducedMotion) {
         const phrases = [
             'P:\\> Bem vindos(as) ao meu portifólio!',
-            'P:\\> Escalabilidade, Eficiença e Segurança',
-            '"Nossas maiores realizações não podem ficar para trás, porque nosso destino está acima de nós. Cooper - Interesletar."'
+            'P:\\> Engenharia, dados e segurança',
+            'P:\\> Escalabilidade e Eficiença'
         ];
         let phraseIndex = 0;
         let charIndex = 0;
